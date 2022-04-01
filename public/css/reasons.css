@@ -1,0 +1,73 @@
+@import url('index.css');
+
+main {
+   background-color: var(--background-color2);
+}
+
+.received {
+   padding: 2rem 0;
+}
+
+.received_header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-bottom: 2rem;
+}
+
+.received_title {
+   color: var(--logo-color);
+   font-size: 2rem;
+}
+
+.received_header .received_btn {
+   width: 20vw;
+
+   background-color: var(--green);
+
+   margin-top: 0;
+}
+
+.received_list__items {
+   color: var(--text-color);
+
+   padding: 1rem;
+
+   background-color: var(--background-color3);
+}
+
+.received_list__items > h1 {
+   color: #9ddbd3;
+   margin-bottom: .6rem;
+}
+
+.received_list__items > p {
+   font-size: .9rem;
+}
+
+.received_list__items + li {
+   margin-top: 1rem;
+}
+
+.change_page {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.change_page .next_page__btn {
+   margin-top: 0;
+   width: 12vw;
+   padding: .5rem .4rem;
+
+   display: flex;
+   justify-content: center;
+
+   font-size: .7rem;
+
+   margin-bottom: 2rem;
+
+   text-decoration: none;
+   color: black;
+}

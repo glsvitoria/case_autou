@@ -1,0 +1,112 @@
+@import url('index.css');
+@import url('dashboard.css');
+
+.modal-wrapper.active {
+   visibility: visible;
+   opacity: 1;
+}
+
+.modal-wrapper {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   display: flex;
+
+   background: rgba(4, 9, 17, 0.8);
+
+   visibility: hidden;
+   opacity: 0;
+}
+
+.modal-wrapper .modal {
+   width: min(40rem, 75%);
+   background: var(--white);
+   margin: auto;
+   padding: 4rem; 
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   border-radius: .8rem;
+
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+
+   background-color: var(--background-color1);
+   color: #F59E22;
+}
+
+.modal-wrapper .modal h2 {
+   font-size: 2.4rem;
+   font-weight: 700;
+
+   margin-bottom: 1.6rem;
+   color: var(--black);
+}
+
+.modal-wrapper .modal label {
+   margin-right: 1rem;
+}
+
+.modal-wrapper .modal p {
+   margin-bottom: 2.4rem;
+   color: var(--grey-dark);
+}
+
+.modal-wrapper .modal select {
+   padding: .2rem;
+   border-radius: .2rem;
+
+   background-color: var(--text-color);
+   color: var(--logo-color);
+}
+
+.modal-wrapper .modal .options {
+   margin-top: 1.6rem;
+
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-wrapper .modal .options .reasons_options {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.modal-wrapper .modal .options .reasons_options button {
+   width: 90%;
+}
+
+.modal-wrapper .modal .options .reasons_options button.choosed {
+   background-color: #F59E22;
+}
+
+.modal-wrapper .modal .buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin-top: 3rem;
+}
+
+.modal-wrapper .modal .buttons .red {
+   margin-top: 0;
+}
+
+.modal-wrapper .modal .buttons > .button {
+   margin-right: .8rem;
+}
+
+.modal-wrapper .modal .buttons > button,
+.modal-wrapper .modal .buttons > .button {
+   padding: 1.3rem 3.2rem;
+   cursor: pointer;
+}

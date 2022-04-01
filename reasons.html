@@ -1,0 +1,83 @@
+<main>
+	<section class="container dashboard">
+		<div class="received">
+			<div class="received_header">
+				<h1 class="received_title">Reações recebidas</h1>
+				<button class="login_form__btn received_btn">Avaliar colega</button>
+			</div>
+			<ul class="received_list">
+				<li class="received_list__items">
+					<h1>Like</h1>
+					<p>Parabéns pelo trabalho, você merece um like</p>
+				</li>
+				<li class="received_list__items">
+					<h1>Excelente trabalho</h1>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						Ullam culpa magnam
+					</p>
+					<p></p>
+				</li>
+
+				<li class="received_list__items">
+					<h1>Colaboração</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Officiis nam nemo animi. Dolor officiis doloremque corporis
+						necessitatibus dicta modi earum rerum sunt voluptates
+						delectus. Neque ex quod ab nostrum culpa!
+					</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<div class="change_page container">
+		<a class="login_form__btn next_page__btn" href="ranking.html"
+			>Ir para ranking 🢂</a
+		>
+	</div>
+</main>
+
+<div class="modal-wrapper">
+	<div class="modal">
+		<h2>Enviar uma reação</h2>
+
+		<form action="">
+			<label class="sr-only" for="person"> A quem você quer reagir? </label>
+
+			<select name="person" id="person" required>
+				<option value="p1">Jean</option>
+				<option value="p2">Wilson</option>
+				<option value="p3">Gaby</option>
+				<option value="p4">Igor</option>
+			</select>
+
+			<div class="options">
+				<label for="reasons">Como você quer reagir?</label>
+				<div class="reasons_options" id="reasons">
+					<button type="button" class="login_form__btn reasons_btn">
+						Like
+					</button>
+					<button
+						type="button"
+						class="login_form__btn reasons_btn choosed"
+					>
+						Orgulho
+					</button>
+					<button type="button" class="login_form__btn reasons_btn">
+						Excelente trabalho
+					</button>
+					<button type="button" class="login_form__btn reasons_btn">
+						Colaboração
+					</button>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<div class="button grey cancel">Cancelar</div>
+				<button class="red login_form__btn">Enviar reação</button>
+			</div>
+		</form>
+	</div>
+</div>
