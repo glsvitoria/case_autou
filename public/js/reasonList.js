@@ -7,7 +7,7 @@ const reasonList = [
       like: 1,
       work: 5,
       proud: 2,
-      organization: 4
+      colaboration: 4
 	},
 	{
 		id: 2,
@@ -17,7 +17,7 @@ const reasonList = [
       like: 5,
       work: 3,
       proud: 1,
-      organization: 5
+      colaboration: 5
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ const reasonList = [
       like: 1,
       work: 2,
       proud: 5,
-      organization: 6
+      colaboration: 6
 	},
 	{
 		id: 4,
@@ -37,7 +37,7 @@ const reasonList = [
       like: 4,
       work: 3,
       proud: 5,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 5,
@@ -47,7 +47,7 @@ const reasonList = [
       like: 3,
       work: 1,
       proud: 2,
-      organization: 4
+      colaboration: 4
 	},
 	{
 		id: 6,
@@ -57,7 +57,7 @@ const reasonList = [
       like: 1,
       work: 4,
       proud: 5,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 7,
@@ -67,7 +67,7 @@ const reasonList = [
       like: 6,
       work: 2,
       proud: 1,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 8,
@@ -77,7 +77,7 @@ const reasonList = [
       like: 4,
       work: 2,
       proud: 5,
-      organization: 3
+      colaboration: 3
 	},
 	{
 		id: 9,
@@ -87,7 +87,7 @@ const reasonList = [
       like: 1,
       work: 4,
       proud: 3,
-      organization: 3
+      colaboration: 3
    },
 	{
 		id: 10,
@@ -97,7 +97,7 @@ const reasonList = [
       like: 1,
       work: 5,
       proud: 6,
-      organization: 4
+      colaboration: 4
 	},
 	{
 		id: 11,
@@ -107,7 +107,7 @@ const reasonList = [
       like: 6,
       work: 3,
       proud: 5,
-      organization: 1
+      colaboration: 1
 	},
 	{
 		id: 12,
@@ -117,7 +117,7 @@ const reasonList = [
       like: 4,
       work: 2,
       proud: 3,
-      organization: 5
+      colaboration: 5
 	},
 	{
 		id: 13,
@@ -127,7 +127,7 @@ const reasonList = [
       like: 5,
       work: 3,
       proud: 6,
-      organization: 1
+      colaboration: 1
 	},
 	{
 		id: 14,
@@ -137,7 +137,7 @@ const reasonList = [
       like: 6,
       work: 2,
       proud: 5,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 15,
@@ -147,7 +147,7 @@ const reasonList = [
       like: 5,
       work: 6,
       proud: 1,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 16,
@@ -157,7 +157,7 @@ const reasonList = [
       like: 5,
       work: 4,
       proud: 2,
-      organization: 3
+      colaboration: 3
 	},
 	{
 		id: 17,
@@ -167,7 +167,7 @@ const reasonList = [
       like: 1,
       work: 3,
       proud: 3,
-      organization: 4
+      colaboration: 4
 	},
 	{
 		id: 18,
@@ -177,7 +177,7 @@ const reasonList = [
       like: 6,
       work: 4,
       proud: 3,
-      organization: 2
+      colaboration: 2
 	},
 	{
 		id: 19,
@@ -187,7 +187,7 @@ const reasonList = [
       like: 2,
       work: 5,
       proud: 3,
-      organization: 4
+      colaboration: 4
 	}
 ]
 
