@@ -88,18 +88,19 @@ body {
    align-items: flex-start;
 }
 
-.emails, .mats {
-   display: flex;
-   align-items: center;
-}
-
 .options_btn {
    padding: .3rem;
    margin-right: 1rem;
 }
 
-.mats > label, .emails > label {
-   font-size: 1rem;
+.login_form__choose___options {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#register {
+   margin-left: 3rem;
 }
 
 .login_form__user > label {
@@ -140,6 +141,12 @@ body {
    filter: brightness(0.8);
    cursor: pointer;
 }
+
+.error {
+   color: red;
+   margin: 1rem 0 -.5rem 0;
+}
+
 
 /*=====  FOOTER  =====*/
 .footer {

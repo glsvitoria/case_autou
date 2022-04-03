@@ -1,32 +1,59 @@
 <main>
-   <section class="login">
-      <div id="login_area" class="container">
-         <h2 class="login_title">Login</h2>
-         <form action="">
+	<section class='login'>
+		<div id='login_area' class='container'>
+			<h2 class='login_title'>Login</h2>
+			<form action=''>
 
-            <div class="login_form__choose">
-               <p class="login_form__choose___title">Qual a forma de acesso?</p>
+				<div class='login_form__choose'>
+					<p class='login_form__choose___title'>Qual a forma de acesso?</p>
 
-               <div class="login_form__choose___options">
-                  <div class="emails">
-                     <input class="options_btn" type="radio" id="email" name="options" value="email" required>
-                     <label for="email">E-mail</label>
-                  </div>
+					<div class='login_form__choose___options'>
+						<input
+							class='options_btn'
+							type='radio'
+							id='email'
+							name='options'
+							value='email'
+							required
+						/>E-mail
+						<input
+							class='options_btn'
+							type='radio'
+							id='register'
+							name='options'
+							value='register'
+							required
+						/>Matrícula
+					</div>
+				</div>
 
-                  <div class="mats">
-                     <input class="options_btn" type="radio" id="mat" name="options" value="matricula" required>
-                     <label for="mat=">Matrícula</label>
-                  </div>
-               </div>
-            </div>
+				<div class='login_form__user'>
+					<label for='user'>Usuario</label>
+					<input
+						type='text'
+						placeholder='Usuário'
+						name='user'
+						id='login_form__input'
+						required
+					/>
+				</div>
 
-            <div class="login_form__user">
-               <label for="user">Usuario</label>
-               <input type="text" placeholder="Usuário" name="user" id="login_form__input" required>
-            </div>
+				<div class='errorDiv'></div>
 
-            <button type="submit" class="login_form__btn">login</button>
-         </form>
-      </div>
-   </section>>
+				<button
+					type='submit'
+					id='loginButton'
+					class='login_form__btn'
+				>login</button>
+			</form>
+		</div>
+	</section>
 </main>
+
+<footer id='footer'>
+	<section class='footer container'>
+		<p>@2022 - <span class='header_span'>.</span> collaborators</p>
+	</section>
+</footer>
+
+<script type="module" src='js/login.js'></script>

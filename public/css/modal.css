@@ -1,5 +1,5 @@
 @import url('index.css');
-@import url('dashboard.css');
+@import url('reasons.css');
 
 .modal-wrapper.active {
    visibility: visible;

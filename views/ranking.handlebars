@@ -1,62 +1,54 @@
 <main>
-	<section class="ranking container">
-		<div class="ranking_menu">
+	<section class='ranking container'>
+		<div class='ranking_menu'>
 			<h1>Escolha o ranking ao qual deseja visualizar a baixo</h1>
-			<div class="ranking_options">
-				<input type="button" class="login_form__btn" value="Like" />
-				<input type="button" class="login_form__btn" value="Orgulho" />
+			<div class='ranking_options'>
 				<input
-					type="button"
-					class="login_form__btn"
-					value="Excelente trabalho"
+					type='button'
+					class='login_form__btn ranking_btn'
+					value='Like'
+					id='like'
 				/>
-				<input type="button" class="login_form__btn" value="Colaboração" />
+				<input
+					type='button'
+					class='login_form__btn ranking_btn'
+					value='Orgulho'
+					id='proud'
+				/>
+				<input
+					type='button'
+					class='login_form__btn ranking_btn'
+					value='Excelente trabalho'
+					id='work'
+				/>
+				<input
+					type='button'
+					class='login_form__btn ranking_btn'
+					value='Organização'
+					id='organization'
+				/>
 			</div>
 		</div>
 
-		<div class="ranking_view">
-			<h1 class="view_title">Ranking de quem mais recebeu ORGULHO</h1>
-			<ul class="view_list">
-				<li class="view_list__items">
-					<h3>1º lugar - Guilherme</h3>
-					<p class="view_list__items___total"></p>
-					<p>
-						Uma das frases enviadas:
-						<span
-							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ex sint vitae et cupiditate? Itaque voluptatum</span
-						>
-					</p>
-				</li>
-				<li class="view_list__items">
-					<h3>2º lugar - Iago</h3>
-					<p class="view_list__items___total"></p>
-					<p>
-						Uma das frases enviadas:
-						<span
-							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ex sint vitae et cupiditate? Itaque voluptatum</span
-						>
-					</p>
-				</li>
-				<li class="view_list__items">
-					<h3>3º lugar - Amilcar</h3>
-					<p class="view_list__items___total"></p>
-					<p>
-						Uma das frases enviadas:
-						<span
-							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ex sint vitae et cupiditate? Itaque voluptatum</span
-						>
-					</p>
-				</li>
+		<div class='ranking_view'>
+			<h1 class='view_title'></h1>
+			<ul class='view_list'>
+
 			</ul>
 		</div>
 	</section>
 
-	<div class="change_page container">
-		<a class="login_form__btn next_page__btn" href="/reasons"
-			>🡸 Voltar para reações</a
-		>
+	<div class='change_page container'>
+		<a class='login_form__btn next_page__btn' href='/reasons'>🡸 Voltar para
+			reações</a>
 	</div>
 </main>
+
+<footer id='footer'>
+	<section class='footer container'>
+		<p>@2022 - <span class='header_span'>.</span> collaborators</p>
+	</section>
+</footer>
+
+<script src='js/ranking.js'></script>
+<script src='js/reasonList.js'></script>
