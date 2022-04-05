@@ -1,6 +1,12 @@
 @import url('index.css');
 @import url('reasons.css');
 
+.dark_mode:root {
+   --green:#5568E7;
+   --background-color3: white;
+   --logo_color: black;
+}
+
 h1 {
    color: var(--logo-color);
 }
@@ -36,6 +42,8 @@ h1 {
 .view_title {
    margin-bottom: 2rem;
    font-size: 1.6rem;
+
+   color: var(--logo_color);
 }
 
 .ranking_view {
@@ -43,7 +51,8 @@ h1 {
    padding: 1.2rem;
 
    background-color: var(--background-color3);
-   border: 1px solid rgb(85, 85, 85);
+   box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.76);
+   border: 1px solid var(--border);
    border-radius: .2rem;
 }
 
@@ -53,12 +62,13 @@ h1 {
 
 .view_list__items h3::before {
    content: '|';
-   color: #B4CF66;
+   color: var(--green);
    margin-right: 1rem;
 }
 
 .view_list__items span{
-   color: #B4CF66;
+   color: var(--green);
+   font-weight: bold;
 }
 
 .view_list__items + li {
