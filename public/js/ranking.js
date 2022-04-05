@@ -88,8 +88,7 @@ function orderRanking(value, title){
       span.appendChild(spanTxt)
       p1.appendChild(span)
 
-      //div.appendChild(h3)
-      //div.appendChild(p)
+      
 
       li.appendChild(img)
       li.appendChild(h3)

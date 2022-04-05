@@ -2,6 +2,7 @@
 
 main {
    background-color: var(--background-color2);
+   position: relative;
 }
 
 .received {
@@ -19,6 +20,10 @@ main {
 .received_title {
    color: var(--logo-color);
    font-size: 2rem;
+}
+
+.received_list {
+   margin: 0 0 0 2rem;
 }
 
 .received_header .received_btn {
@@ -51,23 +56,45 @@ main {
 }
 
 .change_page {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
+   position: absolute;
+   top: 10rem;
+   left: 0;
+   float: left;
+   width: 60px;
+   height: 60px;
+   shape-outside: circle(50% at 30%);
+   clip-path: circle(50% at 30%);
+   background: var(--text-color3);
+
+   transition: 200ms;
 }
 
-.change_page .next_page__btn {
-   margin-top: 0;
-   width: 12vw;
-   padding: .5rem .4rem;
+a + a .change_page {
+   top: 16rem;
+}
 
-   display: flex;
-   justify-content: center;
+.change_page__img {
+   width: 2rem;
 
-   font-size: .7rem;
+   margin-left: .3rem;
+   margin-bottom: .2rem;
 
-   margin-bottom: 2rem;
+   transition: 200ms;
+}
 
-   text-decoration: none;
-   color: black;
+a[href="/reaction"] .change_page img {
+   width: 2.1rem;
+}
+
+.change_page:hover {
+   cursor: pointer;
+   clip-path: circle(50% at 50%);
+}
+
+.change_page:active {
+   filter: brightness(0.5);
+}
+
+.change_page:hover .change_page__img {
+   margin-left: 1rem;
 }

@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
-app.get('/reasons', (req, res) => {
-   res.render('reasons')
+app.get('/reaction', (req, res) => {
+   res.render('reaction')
 })
 
 app.get('/ranking', (req, res) => {

@@ -189,7 +189,7 @@ function verifyLogin() {
 		if (optionChoose == 'email') {
 			if (item.email == loginUser) {
             user = item
-            location.assign('/reasons')
+            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
@@ -197,7 +197,7 @@ function verifyLogin() {
 		} else if (optionChoose == 'register') {
 			if (item.register == loginUser) {
             user = item
-            location.assign('/reasons')
+            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')

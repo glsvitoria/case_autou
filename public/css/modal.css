@@ -1,5 +1,5 @@
 @import url('index.css');
-@import url('reasons.css');
+@import url('reaction.css');
 
 .modal-wrapper.active {
    visibility: visible;

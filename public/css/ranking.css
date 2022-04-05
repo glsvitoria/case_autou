@@ -1,10 +1,14 @@
 @import url('index.css');
-@import url('reasons.css');
+@import url('reaction.css');
 
 .dark_mode:root {
    --green:#5568E7;
    --background-color3: white;
    --logo_color: black;
+}
+
+main {
+   min-height: 38vh;
 }
 
 h1 {
@@ -23,6 +27,8 @@ h1 {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 2rem;
+
+   margin: 0 0 0 2rem;
 }
 
 .ranking_options > input {
@@ -32,6 +38,7 @@ h1 {
 .ranking_view {
    display: none;
    visibility: hidden;
+   margin: 0 0 0 2rem;
 }
 
 .ranking_view.active {

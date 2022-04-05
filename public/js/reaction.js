@@ -1,7 +1,7 @@
 let userString = localStorage.getItem('user')
 let user = JSON.parse(userString)
 
-history.replaceState({}, null, `/reasons/user=${user.register}`)
+history.replaceState({}, null, `/reaction/user=${user.register}`)
 
 console.log(user)
 
