@@ -3,54 +3,62 @@
 		<div class='ranking_menu'>
 			<h1>Escolha o ranking ao qual deseja visualizar a baixo</h1>
 			<div class='ranking_options'>
-				<input
-					type='button'
+				<button
 					class='login_form__btn login_form__btn2 ranking_btn'
 					value='Like'
 					id='like'
-				/>
-				<input
-					type='button'
+				>
+					<i class='icon-thumbs-up'></i>
+					<p>Like</p>
+				</button>
+				<button
 					class='login_form__btn login_form__btn2 ranking_btn'
 					value='Orgulho'
 					id='proud'
-				/>
-				<input
-					type='button'
+				>
+					<i class='icon-flag'></i>
+					<p>Proud</p>
+				</button>
+				<button
 					class='login_form__btn login_form__btn2 ranking_btn'
 					value='Excelente trabalho'
 					id='work'
-				/>
-				<input
-					type='button'
+				>
+					<i class='icon-trello'></i>
+					<p>Excelente trabalho</p>
+				</button>
+				<button
 					class='login_form__btn login_form__btn2 ranking_btn'
 					value='Colaboração'
 					id='colaboration'
-				/>
+				>
+					<i class='icon-users'></i>
+					<p>Colaboração</p>
+				</button>
 			</div>
 		</div>
 
 		<div class='ranking_view'>
 			<h1 class='view_title'></h1>
 			<ul class='view_list'>
-            <ul class="view_list__tops">
-               
-            </ul>
+				<ul class='view_list__tops'>
+
+				</ul>
 			</ul>
 		</div>
 	</section>
 
-   <a href="/reaction">
-      <div class='change_page'>
-         <i class="icon-heart"></i>
-      </div>
-   </a>
+	<a href='/reaction'>
+		<div class='change_page'>
+			<i class='icon-heart'></i>
+		</div>
+	</a>
 
-   <a href="/ranking">
-      <div class='change_page'>
-         <i class="icon-award"></i>
-      </div>
-   </a>
+	<a href='/ranking'>
+		<div class='change_page'>
+			<i class='icon-award'></i>
+		</div>
+	</a>
 
 </main>
 
@@ -60,6 +68,6 @@
 	</section>
 </footer>
 
-<script src="js/darkMode.js"></script>
+<script src='js/darkMode.js'></script>
 <script src='js/ranking.js'></script>
 <script src='js/reasonList.js'></script>

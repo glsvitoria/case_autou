@@ -1,7 +1,7 @@
 @import url('index.css');
 @import url('reaction.css');
 
-.dark_mode:root {
+:root {
    --green:#5568E7;
    --background-color3: white;
    --logo_color: black;
@@ -61,6 +61,21 @@ h1 {
    box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.76);
    border: 1px solid var(--border);
    border-radius: .2rem;
+}
+
+.ranking_btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.ranking_btn i {
+   font-size: 1rem;
+   margin: 0 2rem 0 -2rem;
+}
+
+.ranking_btn p {
+   max-width: 5rem;
 }
 
 .view_list {

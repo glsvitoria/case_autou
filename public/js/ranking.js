@@ -8,7 +8,7 @@ console.log(user)
 let headerTxt = document.querySelector('.header_text')
 headerTxt.textContent = `Olá ${user.name}, dê uma olhada no ranking de reações`
 
-const buttons = document.querySelectorAll('.ranking_options input')
+const buttons = document.querySelectorAll('.ranking_options button')
 
 for(let btn of buttons){
    btn.addEventListener('click', () => {

@@ -7,6 +7,22 @@
 
 :root {
    --logo-color:#3a3a3a;
+   --text-color: #00635A;
+   --text-color2: black;
+   --text-color3: #5568E7;
+   --button-color: #5568E7;
+   --button-text: #FFF;
+   --background-input: #F7F6FB;
+   --background: #E8E2EC;
+   --background-color1: #FFFFFF;
+   --background-color2:#F7F6FB;
+   --background-login:#FFFFFF;
+   --green: #98FA62;
+   --border: var(--background-input);
+}
+
+.dark_mode:root {
+   --logo-color:#3a3a3a;
    --text-color: #22A1F5;
    --text-color2: var(--logo-color);
    --text-color3: #22A1F5;
@@ -22,21 +38,6 @@
    --border: rgb(85, 85, 85);
 }
 
-.dark_mode:root {
-   --logo-color:#3a3a3a;
-   --text-color: #00635A;
-   --text-color2: black;
-   --text-color3: #5568E7;
-   --button-color: #5568E7;
-   --button-text: #FFF;
-   --background-input: #F7F6FB;
-   --background: #E8E2EC;
-   --background-color1: #FFFFFF;
-   --background-color2:#F7F6FB;
-   --background-login:#FFFFFF;
-   --green: #98FA62;
-   --border: var(--background-input);
-}
 
 .label_checkbox {
    position: absolute;
@@ -69,8 +70,10 @@
    top: 0;
    left: 0;
    background: #FFF;
-   background-image: url('https://images.vexels.com/media/users/3/205562/isolated/lists/c5460a0b8bb6bef04c96398bf6ec86ba-ilustracao-de-lua-minguante.png');
-   background-size:contain;
+   background-image: url('../assets/sun.svg');
+   background-size: 16px;
+   background-repeat: no-repeat;
+   background-position: center center;
    padding: 2px;
    transform: scale(1.1);
    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
@@ -79,7 +82,7 @@
 
 #switch:checked::before{
    left: 20px;
-   background-image: url('https://images.vexels.com/media/users/3/145134/isolated/preview/46b65a02ff99e7bb4e84d4d3d627a729-icone-de-raios-nitidos-do-sol.png');
+   background-image: url('../assets/moon.svg');
 }
 
 body {
@@ -152,7 +155,7 @@ footer {
 }
 
 #login_area {
-   background-color: var(--background-login);
+   background: linear-gradient(225deg, rgba(255,255,255,1) 60%, rgba(85,104,231,1) 160%);
    padding: 2rem;
 
    margin: 4rem 0;
@@ -170,7 +173,7 @@ footer {
 }
 
 html.dark_mode #login_area {
-   background: linear-gradient(225deg, rgba(255,255,255,1) 60%, rgba(85,104,231,1) 160%);
+   background: var(--background-login);
    box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.76);
 }
 
