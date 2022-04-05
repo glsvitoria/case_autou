@@ -28,6 +28,7 @@
    --text-color2: black;
    --text-color3: #5568E7;
    --button-color: #5568E7;
+   --button-text: #FFF;
    --background-input: #F7F6FB;
    --background: #E8E2EC;
    --background-color1: #FFFFFF;
@@ -254,10 +255,10 @@ html.dark_mode #login_area {
    cursor: pointer;
 }
 
-.login_form__btn___img {
-   width: 2vw;
-   margin: 0 calc(50% - 5.6vw) 0 2vw;
-   color: var(--button-text)
+#loginButton i {
+   color: var(--button-text);
+   font-size: 1.2rem;
+   margin: 0 calc(50% - 4rem) 0 2rem;
 }
 
 .error {
