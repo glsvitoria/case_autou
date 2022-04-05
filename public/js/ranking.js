@@ -64,13 +64,23 @@ function orderRanking(value, title){
 
    const ul = document.querySelector('.view_list')
    ul.innerHTML = ''
-   const ul2 = document.createElement('ul')
-   ul2.innerHTML = ''
-   ul2.classList.add('view_list__tops')
+
+   const ulTops = document.createElement('ul')
+   ulTops.innerHTML = ''
+   ulTops.classList.add('view_list__tops')
+
+   const ulLeft = document.createElement('ul')
+   ulLeft.innerHTML = ''
+   ulLeft.classList.add('view_list__left')
+
+   const ulRight = document.createElement('ul')
+   ulRight.innerHTML = ''
+   ulRight.classList.add('view_list__right')
+
+   const div = document.createElement('div')
 
    for(let i = 0; i < 3 ; i++){
-      
-
+   
       const li = document.createElement('li')
       li.classList.add('view_list__itemstop')
       li.classList.add(`top${i + 1}`)
@@ -98,11 +108,11 @@ function orderRanking(value, title){
       li.appendChild(img)
       li.appendChild(h3)
       li.appendChild(p1)
-      ul2.appendChild(li)
-      ul.appendChild(ul2)
+      ulTops.appendChild(li)
+      ul.appendChild(ulTops)
    }
    
-   for(let i = 3; i < 19 ; i++){
+   for(let i = 3; i < 11 ; i++){
       
       const li = document.createElement('li')
       li.classList.add('view_list__items')
@@ -122,8 +132,38 @@ function orderRanking(value, title){
 
       li.appendChild(h3)
       li.appendChild(p1)
-      ul.appendChild(li)
+      ulLeft.appendChild(li)
+      div.appendChild(ulLeft)
+      ul.appendChild(div)
+
    }
+
+   for(let i = 11; i < 19 ; i++){
+      
+      const li = document.createElement('li')
+      li.classList.add('view_list__items')
+      
+      const h3 = document.createElement('h3')
+      const h3Txt = document.createTextNode(`${i + 1}º Lugar - ${ranking[i].name}`)
+      h3.appendChild(h3Txt)
+
+      const p1 = document.createElement('p')
+      p1.classList.add('view_list__items___total')
+      const p1Txt = document.createTextNode(`Total de reações de like: `)
+      const span = document.createElement('span')
+      const spanTxt = document.createTextNode(`${ranking[i].reason}`)
+      span.appendChild(spanTxt)
+      p1.appendChild(p1Txt)
+      p1.appendChild(span)
+
+      li.appendChild(h3)
+      li.appendChild(p1)
+      ulRight.appendChild(li)
+      div.appendChild(ulRight)
+      ul.appendChild(div)
+   }
+
+   
    
    /*<ul class='view_list'>
       <li class='view_list__items'>

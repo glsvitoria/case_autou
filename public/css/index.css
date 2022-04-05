@@ -10,6 +10,7 @@
    --text-color: #00635A;
    --text-color2: black;
    --text-color3: #5568E7;
+   --text-color4: var(--logo-color);
    --button-color: #5568E7;
    --button-text: #FFF;
    --background-input: #F7F6FB;
@@ -26,14 +27,15 @@
    --text-color: #22A1F5;
    --text-color2: var(--logo-color);
    --text-color3: #22A1F5;
+   --text-color4: white;
    --button-color: #22A1F5;
    --button-text: #000;
    --background-input: var(--logo-color);
    --background: #35393b;
    --background-color1: #1B1D1E;
-   --background-color2:#181A1B;
+   --background-color2: var(--background-color1);
    --background-color3: #1c1e1f;
-   --background-login: #181A1B;
+   --background-login: var(--background-color1);
    --green: #98FA62;
    --border: rgb(85, 85, 85);
 }
