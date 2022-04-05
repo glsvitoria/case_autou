@@ -6,4 +6,4 @@ history.replaceState({}, null, `/reaction/user=${user.register}`)
 console.log(user)
 
 let headerTxt = document.querySelector('.header_text')
-headerTxt.textContent = `Olá ${user.name}, veja as reações que você recebeu`
+headerTxt.textContent = `Olá ${user.name} ${user.lastName}, veja as reações que você recebeu`
