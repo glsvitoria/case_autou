@@ -64,8 +64,40 @@ function orderRanking(value, title){
 
    const ul = document.querySelector('.view_list')
    ul.innerHTML = ''
+
+   for(let i = 0; i < 3 ; i++){
+      
+      const li = document.createElement('li')
+      li.classList.add('view_list__itemstop')
+
+      const img = document.createElement('img')
+      img.setAttribute('src', `../assets/${i + 1}_place.png`)
+      img.classList.add('view_list__items___img')
+      
+      const div = document.createElement('div')
+      div.classList.add('view_list__div')
+
+      const h3 = document.createElement('h3')
+      const h3Txt = document.createTextNode(`${ranking[i].name}`)
+      h3.appendChild(h3Txt)
+
+      const p1 = document.createElement('p')
+      p1.classList.add('view_list__items___total')
+      const span = document.createElement('span')
+      const spanTxt = document.createTextNode(`${ranking[i].reason}`)
+      span.appendChild(spanTxt)
+      p1.appendChild(span)
+
+      //div.appendChild(h3)
+      //div.appendChild(p)
+
+      li.appendChild(img)
+      li.appendChild(h3)
+      li.appendChild(p1)
+      ul.appendChild(li)
+   }
    
-   for(let i = 0; i < 19 ; i++){
+   for(let i = 3; i < 19 ; i++){
       
       const li = document.createElement('li')
       li.classList.add('view_list__items')

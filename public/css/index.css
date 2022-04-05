@@ -96,8 +96,8 @@ footer {
 }
 
 .container {
-   margin-right: 10vw;
-   margin-left: 10vw;
+   margin-right: 5vw;
+   margin-left: 5vw;
 }
 
 /*=====  HEADER  =====*/
@@ -109,12 +109,24 @@ footer {
    padding: 2rem;
 }
 
+.header_logo {
+   width: 10vw;
+}
+
 .header_title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    color: var(--logo-color);
 }
 
+.header_title h1 {
+   margin-left: -1.2rem;
+   font-size: 1.6rem;
+}
+
 .header_span {
-   color: blue;
+   color: #5271FF;
 }
 
 .header_text {

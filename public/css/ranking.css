@@ -43,7 +43,7 @@ h1 {
    margin-bottom: 2rem;
    font-size: 1.6rem;
 
-   color: var(--logo_color);
+   color: var(--logo-color);
 }
 
 .ranking_view {
@@ -60,6 +60,18 @@ h1 {
    color: var(--text-color);
 }
 
+.view_list__tops {
+   display: flex;
+}
+
+.view_list__itemstop {
+   display: grid;
+}
+
+.view_list__itemstop h3::before {
+   content: '';
+}
+
 .view_list__items h3::before {
    content: '|';
    color: var(--green);
@@ -73,6 +85,10 @@ h1 {
 
 .view_list__items + li {
    margin-top: 1.5rem;
+}
+
+.view_list__items___img {
+   width: 4rem;
 }
 
 .change_page {
@@ -95,4 +111,8 @@ h1 {
 
    text-decoration: none;
    color: black;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
