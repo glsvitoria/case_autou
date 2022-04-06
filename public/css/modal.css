@@ -37,7 +37,7 @@
 	text-align: center;
 
 	background-color: var(--background-color1);
-	color: #f59e22;
+	color: var(--modal-text);
 }
 
 .modal-wrapper .modal form {
@@ -87,7 +87,6 @@ button.reasons_btn {
 	padding: 0.55em 1em;
 	box-sizing: border-box;
 	color: var(--button-text);
-	text-shadow: 0 1px 0 #cacaca;
 	border-radius: 0.2em;
 }
 
@@ -116,9 +115,24 @@ button.reasons_btn {
 	padding-top: 2.1em;
 	box-sizing: border-box;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
+   overflow-y: scroll;
 	max-height: 0;
 	transition: all 250ms ease;
+}
+
+.list-choice-objects::-webkit-scrollbar {
+   width: 12px; /* width of the entire scrollbar */
+}
+
+.list-choice-objects::-webkit-scrollbar-track {
+   background: var(--text-color3); /* color of the tracking area */
+}
+
+.list-choice-objects::-webkit-scrollbar-thumb {
+   background-color: white; /* color of the scroll thumb */
+   border-radius: 20px; /* roundness of the scroll thumb */
+   border: 3px solid var(--text-color3); /* creates padding around scroll thumb */
 }
 
 .list-choice:hover .list-choice-objects input[type='radio'] + span {
@@ -128,15 +142,15 @@ button.reasons_btn {
 }
 
 .list-choice:hover input[type='radio'] + span:hover {
-	background: #bbb;
+	background: var(--orange);
 }
 
 .list-choice:hover input[type='radio']:checked + span:hover {
-	background: #74d68e;
+	background: var(--orange);
 }
 
 .list-choice input[type='radio']:checked + span {
-	background: #74d68e;
+	background: var(--orange);
 	position: absolute;
 	top: 0em;
 	border-radius: 0.2em;
@@ -183,7 +197,7 @@ button.reasons_btn {
 }
 
 .modal-wrapper .modal .options .reasons_options button.choosed {
-	background-color: #f59e22;
+	background-color: var(--orange);
 }
 
 .modal-wrapper .modal .buttons {

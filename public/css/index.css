@@ -11,6 +11,7 @@
    --text-color2: black;
    --text-color3: #5568E7;
    --text-color4: var(--logo-color);
+   --modal-text: var(--logo-color);
    --button-color: #5568E7;
    --button-text: #FFF;
    --background-input: #F7F6FB;
@@ -20,6 +21,7 @@
    --background-login: #FFF;
    --green: #98FA62;
    --border: var(--background-input);
+   --orange: #f59e22;
 }
 
 .dark_mode:root {
@@ -28,6 +30,7 @@
    --text-color2: var(--logo-color);
    --text-color3: #22A1F5;
    --text-color4: white;
+   --modal-text: #9ddbd3;
    --button-color: #22A1F5;
    --button-text: #000;
    --background-input: var(--logo-color);
