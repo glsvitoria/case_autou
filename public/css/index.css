@@ -15,9 +15,9 @@
    --button-text: #FFF;
    --background-input: #F7F6FB;
    --background: #E8E2EC;
-   --background-color1: #FFFFFF;
+   --background-color1: #FFF;
    --background-color2:#F7F6FB;
-   --background-login:#FFFFFF;
+   --background-login: #FFF;
    --green: #98FA62;
    --border: var(--background-input);
 }
@@ -35,6 +35,7 @@
    --background-color1: #1B1D1E;
    --background-color2: var(--background-color1);
    --background-color3: #222425;
+   --background-color4: var(--background-color3);
    --background-login: var(--background-color1);
    --green: #98FA62;
    --border: rgb(85, 85, 85);
@@ -150,7 +151,7 @@ footer {
 
 /*=====  LOGIN  =====*/
 .login {
-   background-color: var(--background-color2);
+   background-color: var(--background-color4);
    display: flex;
    justify-content: center;
    align-items: center;

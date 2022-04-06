@@ -40,6 +40,10 @@
    color: #F59E22;
 }
 
+.modal-wrapper .modal form {
+   width: 90%;
+}
+
 .modal-wrapper .modal h2 {
    font-size: 2.4rem;
    font-weight: 700;
@@ -49,16 +53,28 @@
 }
 
 .modal-wrapper .modal label {
-   margin-right: 1rem;
+   margin: 0 0 1rem 0;
+   display: block;
+}
+
+button.reasons_btn {
+   display: grid;
+   grid-template-columns: 1fr 6fr;
+   justify-items: center;
+   align-items: center;
 }
 
 .modal-wrapper .modal p {
-   margin-bottom: 2.4rem;
    color: var(--grey-dark);
 }
 
+.modal-wrapper .modal i {
+   font-size: 1rem;
+   margin: 0 auto;
+}
+
 .modal-wrapper .modal select {
-   padding: .2rem;
+   padding: .5rem 1rem;
    border-radius: .2rem;
 
    background-color: var(--text-color);
@@ -78,11 +94,15 @@
 
 .modal-wrapper .modal .options .reasons_options {
    display: grid;
+   width: 100%;
    grid-template-columns: 1fr 1fr;
+   justify-items: center;
 }
 
 .modal-wrapper .modal .options .reasons_options button {
-   width: 90%;
+   width: 80%;
+   height: 4rem;
+   margin-top: 1rem;
 }
 
 .modal-wrapper .modal .options .reasons_options button.choosed {
@@ -99,6 +119,7 @@
 
 .modal-wrapper .modal .buttons .red {
    margin-top: 0;
+   width: 50%;
 }
 
 .modal-wrapper .modal .buttons > .button {
