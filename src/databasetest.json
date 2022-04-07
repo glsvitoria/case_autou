@@ -6,19 +6,19 @@
          "email": "lucas.fernandes@cliente.com",
          "fullName": "Lucas Fernandes",
          "like": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -28,19 +28,19 @@
          "email": "pedro.lima@cliente.com",
          "fullName": "Pedro Lima",
          "like": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -50,19 +50,19 @@
          "email": "maria.julianelli@cliente.com",
          "fullName": "Maria Julianelli",
          "like": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -72,19 +72,19 @@
          "email": "kevin.restom@cliente.com",
          "fullName": "Kevin Restom",
          "like": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -94,19 +94,19 @@
          "email": "amanda.amorim@cliente.com",
          "fullName": "Amanda Amorim",
          "like": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -115,10 +115,22 @@
          "register": 9252,
          "email": "fernanda.silva@cliente.com",
          "fullName": "Fernanda Silva",
-         "like": 1,
-         "work": 4,
-         "proud": 5,
-         "colaboration": 2
+         "like": {
+            "qnt": 0,
+            "strings": []
+         },
+         "work": {
+            "qnt": 0,
+            "strings": []
+         },
+         "proud": {
+            "qnt": 0,
+            "strings": []
+         },
+         "colaboration": {
+            "qnt": 0,
+            "strings": []
+         }
       },
       {
          "id": 7,
@@ -126,19 +138,19 @@
          "email": "carla.pereira@cliente.com",
          "fullName": "Carla Pereira",
          "like":{
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -148,19 +160,19 @@
          "email": "pedro.matos@cliente.com",
          "fullName": "Pedro Matos",
          "like": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -170,19 +182,19 @@
          "email": "nathalia.garcia@cliente.com",
          "fullName": "Nathalia Garcia",
          "like": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -192,19 +204,19 @@
          "email": "leonardo.lima@cliente.com",
          "fullName": "Leonardo Lima",
          "like": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -214,19 +226,19 @@
          "email": "giulia.scarppa@cliente.com",
          "fullName": "Giulia Scarppa",
          "like": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -236,19 +248,19 @@
          "email": "michael.pereira@cliente.com",
          "fullName": "Michael Pereira",
          "like": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -258,19 +270,19 @@
          "email": "natan.franco@cliente.com",
          "fullName": "Natan Franco",
          "like": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -280,19 +292,19 @@
          "email": "otávio.costa@cliente.com",
          "fullName": "Otávio Costa",
          "like": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -302,19 +314,19 @@
          "email": "thales.ferreira@cliente.com",
          "fullName": "Thales Ferreira",
          "like": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 6,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -324,19 +336,19 @@
          "email": "anna.alves@cliente.com",
          "fullName": "Anna Alves",
          "like": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -346,19 +358,19 @@
          "email": "alvaro.souza@cliente.com",
          "fullName": "Alvaro Souza",
          "like": {
-            "qnt": 1,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -368,19 +380,19 @@
          "email": "marcela.santos@cliente.com",
          "fullName": "Marcela Santos",
          "like": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          }
       },
@@ -390,19 +402,19 @@
          "email": "ana.oliveira@cliente.com",
          "fullName": "Ana Oliveira",
          "like": {
-            "qnt": 2,
+            "qnt": 0,
             "strings": []
          },
          "work": {
-            "qnt": 5,
+            "qnt": 0,
             "strings": []
          },
          "proud": {
-            "qnt": 3,
+            "qnt": 0,
             "strings": []
          },
          "colaboration": {
-            "qnt": 4,
+            "qnt": 0,
             "strings": []
          }
       }

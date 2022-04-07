@@ -5,3 +5,5 @@ console.log(user)
 
 let headerTxt = document.querySelector('.header_text')
 headerTxt.textContent = `Olá ${user.name} ${user.lastName}, veja as reações que você recebeu`
+
+const data = document.querySelector('.received_list__items h1 span')

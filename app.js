@@ -22,11 +22,14 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
-app.post('/login', (req, res) => {
-	res.redirect('/reaction')
+const dbPath = path.join(__dirname, 'src', 'databasetest.json')
+
+app.post('/login', async (req, res) => {
+	const { options, user } = req.body
+   
+   res.redirect('/reaction')
 })
 
-const dbPath = path.join(__dirname, 'src', 'databasetest.json')
 app.get('/reaction', async (req, res) => {
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
 	const parsedDb = JSON.parse(db)
@@ -75,16 +78,6 @@ function findUser({ users }, person) {
 		}
 	}
 }
-
-/*function sendUser({ users }) {
-   // Receber usuário logado
-
-   users.forEach((item) => {
-      if(item.id == user.id){
-         return item
-      }
-   })
-}*/
 
 app.listen(PORT, function () {
 	console.log('O Express está rodando na porta ' + PORT)
