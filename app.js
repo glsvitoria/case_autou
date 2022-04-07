@@ -3,6 +3,7 @@ const app = express()
 const exphbs = require('express-handlebars')
 const path = require('path')
 const fs = require('fs')
+const { send } = require('process')
 
 app.use(express.urlencoded({ extended: true }))
 
@@ -22,19 +23,8 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
-app.post('/login', async (req, res) => {
-   const { options, user } = req.body
-
-   const userPath = path.join(__dirname, 'src', 'userlogin.json')
-   const db = await fs.promises.readFile(userPath, 'utf-8')
-	const parsedDb = JSON.parse(db)
-
-   parsedDb.user.acessType = options
-   parsedDb.user.acess = user
-
-   await fs.promises.writeFile(userPath, JSON.stringify(parsedDb, null, 4))
-
-   res.redirect('/reaction')
+app.post('/login', (req, res) => {
+	res.redirect('/reaction')
 })
 
 const dbPath = path.join(__dirname, 'src', 'databasetest.json')
@@ -46,11 +36,13 @@ app.get('/reaction', async (req, res) => {
 		status: 'success',
 		data: {
 			users: parsedDb.users,
-		}
+		},
 	})
 })
 
 app.get('/ranking', (req, res) => {
+	const { options, user } = req.body
+
 	res.render('ranking')
 })
 

@@ -172,7 +172,8 @@ const acessLogin = [
 	}
 ]
 
-let user
+let userString = localStorage.getItem('user')
+let user = JSON.parse(userString)
 
 const form = document.querySelector('form')
 const loginButton = document.querySelector('#loginButton')
@@ -191,6 +192,7 @@ function verifyLogin() {
 		if (optionChoose == 'email') {
 			if (item.email == loginUser) {
             user = item
+            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
@@ -198,6 +200,7 @@ function verifyLogin() {
 		} else if (optionChoose == 'register') {
 			if (item.register == loginUser) {
             user = item
+            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
