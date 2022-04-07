@@ -53,11 +53,29 @@ h1 {
    visibility: visible;
 }
 
-.view_title {
+.view_header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    margin-bottom: 2rem;
+}
+
+.view_title {
    font-size: 1.6rem;
 
    color: var(--logo-color);
+}
+
+.view_header i {
+   font-size: 1.6rem;
+   cursor: pointer;
+   color: var(--button-color);
+   
+   transition: 300ms;
+}
+
+.view_header i:hover {
+   transform: scale(1.25);
 }
 
 .ranking_view {

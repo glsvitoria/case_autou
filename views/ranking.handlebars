@@ -7,7 +7,10 @@
          >-->
 
 		<div class='ranking_view active'>
-			<h1 class='view_title'>Ranking Geral da Empresa</h1>
+			<div class="view_header">
+            <h1 class='view_title'>Ranking Geral da Empresa</h1>
+            <i class="icon-info"></i>
+         </div>
 			<ul class='view_list'>
 				<ul class='view_list__tops'>
 
@@ -28,6 +31,43 @@
 		</div>
 	</a>
 
+   <div class='modal_wrapper'>
+	<div class='modal'>
+		<div class="modal_header">
+         <h2>Regras de pontuação</h2>
+         <i class="icon-x"></i>
+      </div>
+      <div class="modal_body">
+         <table>
+            <thead>
+               <tr>
+                  <th>Reação recebida</th>
+                  <th>Pontuação da reação</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Colaboração</td>
+                  <td>1 ponto</td>
+               </tr>
+               <tr>
+                  <td>Like</td>
+                  <td>2 pontos</td>
+               </tr>
+               <tr>
+                  <td>Orgulho</td>
+                  <td>3 pontos</td>
+               </tr>
+               <tr>
+                  <td>Excelente trabalho</td>
+                  <td>4 pontos</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+	</div>
+</div>
+
 </main>
 
 <footer id='footer'>
@@ -37,5 +77,5 @@
 </footer>
 
 <script src='js/darkMode.js'></script>
-<script type="module" src='js/ranking.js'></script>
-<script src='js/reasonList.js'></script>
+<script src='js/ranking/ranking.js'></script>
+<script src="js/ranking/infoModal.js"></script>

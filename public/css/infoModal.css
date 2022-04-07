@@ -1,0 +1,78 @@
+@import url(index.css);
+@import url(ranking.css);
+
+.modal_wrapper.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal_wrapper {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+
+	background: rgba(4, 9, 17, 0.8);
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.modal_wrapper .modal {
+	width: min(30rem, 60%);
+	background: var(--white);
+	margin: auto;
+	padding: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 0.8rem;
+
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+
+	background-color: var(--background-color1);
+	color: var(--modal-text);
+}
+
+.modal_header {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.modal_header i {
+   cursor: pointer;
+
+   transition: 300ms;
+}
+
+.modal_header i:hover {
+   transform: scale(1.25);
+}
+
+table {
+   margin-top: 2rem;
+   color: inherit;
+
+   text-align: center;
+
+   border: 1px solid var(--modal-text);
+   padding: .4rem 0;
+
+   border-spacing: 2rem .4rem;
+}
+
+thead tr {
+   background-color: var(--border);
+}
+
+thead th:first-child {
+   margin-right: 1rem;
+}

@@ -101,7 +101,7 @@ function orderRanking(value, title){
 
       const p1 = document.createElement('p')
       p1.classList.add('view_list__items___total')
-      const p1Txt = document.createTextNode(`Total de reações de like: `)
+      const p1Txt = document.createTextNode(`Pontuação total de reações: `)
       const span = document.createElement('span')
       const spanTxt = document.createTextNode(`${ranking[i].reason}`)
       span.appendChild(spanTxt)
@@ -133,7 +133,7 @@ function orderRanking(value, title){
 
       const p1 = document.createElement('p')
       p1.classList.add('view_list__items___total')
-      const p1Txt = document.createTextNode(`Total de reações de like: `)
+      const p1Txt = document.createTextNode(`Pontuação total de reações: `)
       const span = document.createElement('span')
       const spanTxt = document.createTextNode(`${ranking[i].reason}`)
       span.appendChild(spanTxt)
