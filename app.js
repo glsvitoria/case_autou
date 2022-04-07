@@ -3,7 +3,6 @@ const app = express()
 const exphbs = require('express-handlebars')
 const path = require('path')
 const fs = require('fs')
-const { send } = require('process')
 
 app.use(express.urlencoded({ extended: true }))
 

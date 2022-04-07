@@ -5,6 +5,13 @@
    --green:#5568E7;
    --background-color3: white;
    --logo_color: black;
+   --user: #98FA62
+   --degrade: #FFF;
+}
+
+.dark_mode:root {
+   --user: #5568E;
+   --degrade: var(--background-color3);
 }
 
 main {
@@ -88,15 +95,24 @@ h1 {
    align-items: center;
 }
 
+li.userLogin {
+   border: 1px solid rgb(138, 138, 138);
+   font-weight: bold;
+   background-color: var(--background-color2);
+   padding: .6rem;
+   margin-left: -.6rem;
+}
+
+li.userLogin h3::before {
+   color: var(--user);
+}
+
 .view_list__tops {
    display: flex;
    justify-content: space-between;
    align-items: center;
 
-   border: 2px solid var(--border);
    padding: 1rem;
-
-   background-color: var(--background-color2);
 
    width: 95%;
    height: 15rem;
@@ -105,21 +121,21 @@ h1 {
 
 .view_list__tops .top1 {
    order: 2;
-   margin-top: -9rem;
+   margin-top: -10rem;
 
    background-color: rgba(255, 185, 87, 0.75);
 }
 
 .view_list__tops .top2 {
    order: 1;
-   margin-top: 1.5rem;
+   margin-top: 2.5rem;
 
    background-color: rgba(210, 209, 214, 0.75);
 }
 
 .view_list__tops .top3 {
    order: 3;
-   margin-top: 8rem;
+   margin-top: 10rem;
 
    background-color: rgba(206, 116, 48, 0.75);
 }

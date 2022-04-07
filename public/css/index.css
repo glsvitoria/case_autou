@@ -93,8 +93,10 @@
 
 body {
    font-family: 'Poppins', sans-serif;
-   margin: 2rem;
+   margin: 2rem auto 2rem auto;
    background-color: var(--background);
+
+   max-width: 1600px;
 }
 
 header, footer {
@@ -288,6 +290,12 @@ html.dark_mode #login_area {
    padding: 2rem 0;
 
    color: #585858;
+}
+
+@media screen and (max-width: 1600px){
+   body {
+      margin: 2rem;
+   }
 }
 
 @media screen and (max-width:1000px) {

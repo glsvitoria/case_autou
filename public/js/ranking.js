@@ -1,50 +1,22 @@
 let userString = localStorage.getItem('user')
 let user = JSON.parse(userString)
 
-
 console.log(user)
 
 let headerTxt = document.querySelector('.header_text')
 headerTxt.textContent = `Olá ${user.name}, dê uma olhada no ranking de reações`
 
-const buttons = document.querySelectorAll('.ranking_options button')
-
-for(let btn of buttons){
-   btn.addEventListener('click', () => {
-      showRanking(btn)
-   })
-}
-
-chosedRanking()
-
-function showRanking(btn) {
-   const view = document.querySelector('.ranking_view')
-   view.classList.add('active')
-}
-
-function chosedRanking(){
-   const buttons = document.querySelectorAll('.ranking_btn')
-
-   for(let btn of buttons){
-      btn.addEventListener('click', () => {
-         orderRanking(btn.id.toLowerCase(), btn.value)
-      })
-   }
-}
+orderRanking('like', 'Like')
+//orderRanking('btn.id.toLowerCase()', btn.value)
 
 function orderRanking(value, title){
    let reasonString = localStorage.getItem('reasonList')
    let reason = JSON.parse(reasonString)
    let ranking = []
 
-   const h1 = document.querySelector('.view_title')
-   h1.innerHTML = ''
-   const h1Txt = document.createTextNode(`Ranking de quem mais recebeu ${title.toUpperCase()}`)
-   h1.appendChild(h1Txt)
-
    for(let item of reason) {
       ranking.push({
-         reason: item[value],
+         reason: (item.like * 2) + (item.proud * 3) + (item.colaboration * 1) + (item.work * 4),
          name: item.fullName
       })
    }
@@ -91,7 +63,10 @@ function orderRanking(value, title){
       div.classList.add('view_list__div')
 
       const h3 = document.createElement('h3')
-      const h3Txt = document.createTextNode(`${ranking[i].name}`)
+      let h3Txt = document.createTextNode(`${ranking[i].name}`)
+      if(isUser(ranking[i].name)){
+         h3Txt.textContent = 'Você'
+      }
       h3.appendChild(h3Txt)
 
       const p1 = document.createElement('p')
@@ -101,11 +76,13 @@ function orderRanking(value, title){
       span.appendChild(spanTxt)
       p1.appendChild(span)
 
-      
 
       li.appendChild(img)
       li.appendChild(h3)
       li.appendChild(p1)
+      if(isUser(ranking[i].name)){
+         li.classList.add('userLogin')
+      }
       ulTops.appendChild(li)
       ul.appendChild(ulTops)
    }
@@ -116,7 +93,10 @@ function orderRanking(value, title){
       li.classList.add('view_list__items')
       
       const h3 = document.createElement('h3')
-      const h3Txt = document.createTextNode(`${i + 1}º Lugar - ${ranking[i].name}`)
+      let h3Txt = document.createTextNode(`${i + 1}º Lugar - ${ranking[i].name}`)
+      if(isUser(ranking[i].name)){
+         h3Txt.textContent = `${i + 1}º Lugar - Você`
+      }
       h3.appendChild(h3Txt)
 
       const p1 = document.createElement('p')
@@ -130,6 +110,9 @@ function orderRanking(value, title){
 
       li.appendChild(h3)
       li.appendChild(p1)
+      if(isUser(ranking[i].name)){
+         li.classList.add('userLogin')
+      }
       ulLeft.appendChild(li)
       div.appendChild(ulLeft)
       ul.appendChild(div)
@@ -142,7 +125,10 @@ function orderRanking(value, title){
       li.classList.add('view_list__items')
       
       const h3 = document.createElement('h3')
-      const h3Txt = document.createTextNode(`${i + 1}º Lugar - ${ranking[i].name}`)
+      let h3Txt = document.createTextNode(`${i + 1}º Lugar - ${ranking[i].name}`)
+      if(isUser(ranking[i].name)){
+         h3Txt.textContent = `${i + 1}º Lugar - Você`
+      }
       h3.appendChild(h3Txt)
 
       const p1 = document.createElement('p')
@@ -156,12 +142,18 @@ function orderRanking(value, title){
 
       li.appendChild(h3)
       li.appendChild(p1)
+      if(isUser(ranking[i].name)){
+         li.classList.add('userLogin')
+      }
       ulRight.appendChild(li)
       div.appendChild(ulRight)
       ul.appendChild(div)
    }
 
-   
+   function isUser(name){
+      const isTrue = (name == `${user.name} ${user.lastName}`) ? true : false
+      return isTrue
+   }
    
    /*<ul class='view_list'>
       <li class='view_list__items'>
