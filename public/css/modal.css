@@ -74,6 +74,15 @@ button.reasons_btn {
 	position: relative;
 	cursor: pointer;
 }
+
+.list_one {
+   z-index: 2;
+}
+
+.list_two{
+   z-index: 1;
+}
+
 .list-choice input[type='radio'] {
 	position: absolute;
 	left: -9999px;
@@ -160,11 +169,7 @@ button.reasons_btn {
 	border-radius: 0;
 }
 
-.list-choice:hover
-	.list-choice-objects
-	label:nth-last-of-type(1)
-	input[type='radio']:checked
-	+ span {
+.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type='radio']:checked + span {
 	border-radius: 0 0 0.2em 0.2em;
 }
 
@@ -181,23 +186,6 @@ button.reasons_btn {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.modal-wrapper .modal .options .reasons_options {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 1fr;
-	justify-items: center;
-}
-
-.modal-wrapper .modal .options .reasons_options button {
-	width: 80%;
-	height: 4rem;
-	margin-top: 1rem;
-}
-
-.modal-wrapper .modal .options .reasons_options button.choosed {
-	background-color: var(--orange);
 }
 
 .modal-wrapper .modal .buttons {
@@ -217,8 +205,76 @@ button.reasons_btn {
 	margin-right: 0.8rem;
 }
 
-.modal-wrapper .modal .buttons > button,
 .modal-wrapper .modal .buttons > .button {
 	padding: 1.3rem 3.2rem;
 	cursor: pointer;
+}
+
+.button_option {
+   position: relative;
+   width: 80%;
+   height: 4rem;
+   
+   margin-top: 1rem;
+
+   border-radius: .5rem;
+
+   color: var(--button-text);
+   text-transform: uppercase;
+   background-color: var(--button-color);
+}
+
+.button_option:hover {
+   filter: brightness(0.8);
+   cursor: pointer;
+}
+
+.button_option input {
+   width: 110%;
+   height: 100%;
+
+   border-radius: inherit;
+   border: none;
+
+   background-color: inherit;
+}
+
+.button_option input:hover {
+   cursor: pointer;
+}
+
+.button_option i {
+   position: absolute;
+   top: calc(50% - .6rem);
+   left: 1rem;
+}
+
+.button_option p {
+   position: absolute;
+   width: 110%;
+   top: 30%;
+
+   margin: 0 auto;
+}
+
+.from_phrase {
+   margin-top: .6rem;
+}
+
+#phrase {
+   display: block;
+   margin: 1rem auto 0 auto;
+   padding: 1rem;
+
+   width: 75%;
+   height: 2rem;
+
+   border-radius: .5rem;
+   border: none;
+   border: 1px solid var(--button-color);
+   -webkit-appearance: none;
+}
+
+#phrase:focus {
+   outline: none;
 }

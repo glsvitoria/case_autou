@@ -51,6 +51,7 @@ for(let i = 0; i < 19; i++){
       const input = document.createElement('input')
       input.setAttribute('type', 'radio')
       input.setAttribute('name', 'person')
+      input.setAttribute('value', reaction[i].register)
 
       const span = document.createElement('span')
       const spanTxt = document.createTextNode(reaction[i].fullName)
@@ -67,3 +68,55 @@ for(let i = 0; i < 19; i++){
    <input type='radio' name='month' />
    <span>January</span>
 </label>*/
+
+// Buscando os resultados do modal
+const submitBtn = document.querySelector('.red')
+const form = document.querySelector('.modal form')
+submitBtn.addEventListener('click', (e) => {
+	e.preventDefault()
+
+   let memberChoosedByUser
+	const input = document.querySelectorAll('.list-choice-objects label input')
+   for(let item of input){
+      if(item.checked){
+         memberChoosedByUser = item.value
+      }
+   }
+   //let reactionChoosedByUser = document.querySelector('.choosed input').id
+
+   // Enviar o form
+   form.submit()
+   
+})
+
+const divReasons = document.querySelector('.options .list-choice-objects')
+for(let i = 0; i < 4; i++){
+   const label = document.createElement('label')
+
+   const input = document.createElement('input')
+   input.setAttribute('type', 'radio')
+   input.setAttribute('name', 'reason')
+   let txt = 'Like'
+   let value = 'like'
+   if(i == 1){
+      txt = 'Orgulho'
+      value = 'proud'
+   } else if(i == 2){
+      txt = 'Excelente trabalho'
+      value = 'work'
+   } else if(i == 3){
+      txt = 'Colaboração'
+      value = 'colaboration'
+   }
+   input.setAttribute('value', value)
+
+   const span = document.createElement('span')
+   const spanTxt = document.createTextNode(txt.toUpperCase())
+   span.appendChild(spanTxt)
+
+   label.appendChild(input)
+   label.appendChild(span)
+
+   divReasons.appendChild(label)
+
+}

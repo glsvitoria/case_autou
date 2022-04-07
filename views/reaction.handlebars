@@ -10,7 +10,7 @@
 			</div>
 			<ul class='received_list'>
 				<li class='received_list__items'>
-					<h1>Like</h1>
+					<h1>Likes recebidos: {{data.users.[0].like.qnt}}</h1>
 					<p>Parabéns pelo trabalho, você merece um like</p>
 				</li>
 				<li class='received_list__items'>
@@ -52,56 +52,30 @@
 	<div class='modal'>
 		<h2>Enviar uma reação</h2>
 
-		<form action=''>
+		<form action='/reactions' method='POST'>
 			<label class='sr-only' for='person'> A quem você quer reagir? </label>
 
-			<div class='list-choice'>
+			<div class='list-choice list_one'>
 				<div class='list-choice-title'>Membros</div>
 				<div class='list-choice-objects'>
-					<label>
-						<input type='radio' name='month' />
-						<span>January</span>
-					</label>
-					<label>
-						<input type='radio' name='month' />
-						<span>February</span>
-					</label>
+
 				</div>
 			</div>
 
 			<div class='options'>
-				<label for='reasons'>Como você quer reagir?</label>
-				<div class='reasons_options' id='reasons'>
-					<button
-						type='button'
-						class='login_form__btn login_form__btn2 reasons_btn'
-					>
-						<i class='icon-thumbs-up'></i>
-						<p>Like</p>
-					</button>
-					<button
-						type='button'
-						class='login_form__btn login_form__btn2 reasons_btn choosed'
-					>
-						<i class='icon-flag'></i>
-						<p>Orgulho</p>
-					</button>
-					<button
-						type='button'
-						class='login_form__btn login_form__btn2 reasons_btn'
-					>
-						<i class='icon-trello'></i>
-						<p>Excelente trabalho</p>
-					</button>
-					<button
-						type='button'
-						class='login_form__btn login_form__btn2 reasons_btn'
-					>
-						<i class='icon-users'></i>
-						<p>Colaboração</p>
-					</button>
-				</div>
+				<label for='reasons' class="reaction">Como você quer reagir?</label>
+            <div class='list-choice list_two'>
+               <div class='list-choice-title'>Reações</div>
+               <div class='list-choice-objects'>
+
+               </div>
+            </div>
 			</div>
+
+         <div class="from_phrase">
+            <label for="phrase">Qual frase deseja enviar junto da reação?</label>
+            <input type="text" name="phrase" id="phrase">
+         </div>
 
 			<div class='buttons'>
 				<div class='button grey cancel'>Cancelar</div>
