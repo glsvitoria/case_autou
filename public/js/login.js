@@ -174,11 +174,13 @@ const acessLogin = [
 
 let user
 
+const form = document.querySelector('form')
 const loginButton = document.querySelector('#loginButton')
 loginButton.addEventListener('click', (event) => {
 	event.preventDefault()
 	verifyLogin()
    saveUser()
+   form.submit()
 })
 
 function verifyLogin() {
@@ -189,7 +191,6 @@ function verifyLogin() {
 		if (optionChoose == 'email') {
 			if (item.email == loginUser) {
             user = item
-            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
@@ -197,7 +198,6 @@ function verifyLogin() {
 		} else if (optionChoose == 'register') {
 			if (item.register == loginUser) {
             user = item
-            location.assign('/reaction')
             break
 			} else if(item.id == 19) {
             createError('Usuário incorreto')

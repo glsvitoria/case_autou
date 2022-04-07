@@ -82,7 +82,6 @@ submitBtn.addEventListener('click', (e) => {
          memberChoosedByUser = item.value
       }
    }
-   //let reactionChoosedByUser = document.querySelector('.choosed input').id
 
    // Enviar o form
    form.submit()

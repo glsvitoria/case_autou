@@ -22,6 +22,21 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
+app.post('/login', async (req, res) => {
+   const { options, user } = req.body
+
+   const userPath = path.join(__dirname, 'src', 'userlogin.json')
+   const db = await fs.promises.readFile(userPath, 'utf-8')
+	const parsedDb = JSON.parse(db)
+
+   parsedDb.user.acessType = options
+   parsedDb.user.acess = user
+
+   await fs.promises.writeFile(userPath, JSON.stringify(parsedDb, null, 4))
+
+   res.redirect('/reaction')
+})
+
 const dbPath = path.join(__dirname, 'src', 'databasetest.json')
 app.get('/reaction', async (req, res) => {
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
@@ -31,7 +46,7 @@ app.get('/reaction', async (req, res) => {
 		status: 'success',
 		data: {
 			users: parsedDb.users,
-		},
+		}
 	})
 })
 
@@ -50,13 +65,12 @@ app.post('/reactions', async (req, res) => {
 
 	const userFromUserReaction = findUser(parsedDb, person)
 
-   parsedDb.users.forEach((item) => {
-      if(item.id === userFromUserReaction){
-         item[reason].qnt += 1
-         console.log(phrase)
-         item[reason].strings.push(phrase)
-      }
-   })
+	parsedDb.users.forEach((item) => {
+		if (item.id === userFromUserReaction) {
+			item[reason].qnt += 1
+			item[reason].strings.push(phrase)
+		}
+	})
 
 	await fs.promises.writeFile(dbPath, JSON.stringify(parsedDb, null, 4))
 
@@ -70,6 +84,16 @@ function findUser({ users }, person) {
 		}
 	}
 }
+
+/*function sendUser({ users }) {
+   // Receber usuário logado
+
+   users.forEach((item) => {
+      if(item.id == user.id){
+         return item
+      }
+   })
+}*/
 
 app.listen(PORT, function () {
 	console.log('O Express está rodando na porta ' + PORT)

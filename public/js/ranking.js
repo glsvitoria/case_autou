@@ -34,7 +34,6 @@ function chosedRanking(){
 }
 
 function orderRanking(value, title){
-   console.log(value)
    let reasonString = localStorage.getItem('reasonList')
    let reason = JSON.parse(reasonString)
    let ranking = []
