@@ -1,3 +1,17 @@
+<header id='header'>
+			<div class='header container'>
+				<div class='header_title'>
+					<img class="header_logo" src="/assets/logo_collaborators.png" alt="Logo do site">
+               <h1><span class="header_span">.</span>collaborators</h1>
+				</div>
+				<p class='header_text'>
+					Olá {{data.users.fullName}}, veja as reações que você recebeu
+				</p>
+				<label for='switch' class='label_checkbox'>
+					<input type='checkbox' id='switch' />
+				</label>
+			</div>
+</header>
 <main>
 	<section class='container dashboard'>
 		<div class='received'>
@@ -10,35 +24,33 @@
 			</div>
 			<ul class='received_list'>
 				<li class='received_list__items'>
-					<h1>Likes recebidos: <span>{{data.users}}</span></h1>
-					<p>Parabéns pelo trabalho, você merece um like</p>
+					<h1>Likes recebidos: <span>{{data.users.like.qnt}}</span></h1>
+					<p>{{data.users.like.strings.[0]}}</p>
+               <p>{{data.users.like.strings.[1]}}</p>
+               <p>{{data.users.like.strings.[2]}}</p>
+               <p>{{data.users.like.strings.[3]}}</p>
 				</li>
 				<li class='received_list__items'>
-					<h1>Excelente trabalho</h1>
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Ullam culpa magnam
-					</p>
-					<p></p>
+					<h1>Excelente trabalho recebidos: <span>{{data.users.work.qnt}}</h1>
+					<p>{{data.users.work.strings.[0]}}</p>
+					<p>{{data.users.work.strings.[1]}}</p>
+               <p>{{data.users.work.strings.[2]}}</p>
+               <p>{{data.users.work.strings.[3]}}</p>
 				</li>
 
 				<li class='received_list__items'>
-					<h1>Colaboração</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Officiis nam nemo animi. Dolor officiis doloremque corporis
-						necessitatibus dicta modi earum rerum sunt voluptates
-						delectus. Neque ex quod ab nostrum culpa!
-					</p>
+					<h1>Colaboração recebidos: <span>{{data.users.proud.qnt}}</h1>
+					<p>{{data.users.colaboration.strings.[0]}}</p>
+               <p>{{data.users.colaboration.strings.[1]}}</p>
+               <p>{{data.users.colaboration.strings.[2]}}</p>
+               <p>{{data.users.colaboration.strings.[3]}}</p>
 				</li>
             <li class='received_list__items'>
-					<h1>Orgulho recebidos</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Officiis nam nemo animi. Dolor officiis doloremque corporis
-						necessitatibus dicta modi earum rerum sunt voluptates
-						delectus. Neque ex quod ab nostrum culpa!
-					</p>
+					<h1>Orgulho recebidos recebidos: <span>{{data.users.colaboration.qnt}}</h1>
+					<p>{{data.users.proud.strings.[0]}}</p>
+               <p>{{data.users.proud.strings.[1]}}</p>
+               <p>{{data.users.proud.strings.[2]}}</p>
+               <p>{{data.users.proud.strings.[3]}}</p>
 				</li>
 			</ul>
 		</div>
@@ -55,6 +67,26 @@
 			<i class='icon-award'></i>
 		</div>
 	</a>
+
+   <a>
+		<div class='change_page'>
+			<i class='icon-log-out'></i>
+		</div>
+	</a>
+
+   <div class='modal-wrapper-logout'>
+      <div class='modal-logout'>
+         
+         <label for="logout">Deseja mesmo finalizar a sessão?</label>
+
+         <form action='/reactions' method='POST'>
+            <input name="logout" id="cancel" type="button" value="Cancelar">
+            <input name="logout" id="logout" type="button" value="Sair">
+         </form>
+      </div>
+   </div>
+
+
 </main>
 
 <div class='modal-wrapper'>
@@ -100,6 +132,7 @@
 	</section>
 </footer>
 
-<script src='js/darkMode.js'></script>
-<script type='module' src='js/reaction/reaction.js'></script>
-<script src='js/reaction/modal.js'></script>
+<script src='/js/darkMode.js'></script>
+<script src='/js/reaction/reaction.js'></script>
+<script src='/js/reaction/modal.js'></script>
+<script src="/js/reaction/logoutModal.js"></script>

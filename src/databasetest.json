@@ -1,422 +1,441 @@
 {
-   "users": [
-      {
-         "id": 1,
-         "register": 3748,
-         "email": "lucas.fernandes@cliente.com",
-         "fullName": "Lucas Fernandes",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 2,
-         "register": 2482,
-         "email": "pedro.lima@cliente.com",
-         "fullName": "Pedro Lima",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 3,
-         "register": 6449,
-         "email": "maria.julianelli@cliente.com",
-         "fullName": "Maria Julianelli",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 4,
-         "register": 2749,
-         "email": "kevin.restom@cliente.com",
-         "fullName": "Kevin Restom",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 5,
-         "register": 4128,
-         "email": "amanda.amorim@cliente.com",
-         "fullName": "Amanda Amorim",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 6,
-         "register": 9252,
-         "email": "fernanda.silva@cliente.com",
-         "fullName": "Fernanda Silva",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 7,
-         "register": 5945,
-         "email": "carla.pereira@cliente.com",
-         "fullName": "Carla Pereira",
-         "like":{
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 8,
-         "register": 4879,
-         "email": "pedro.matos@cliente.com",
-         "fullName": "Pedro Matos",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 9,
-         "register": 1827,
-         "email": "nathalia.garcia@cliente.com",
-         "fullName": "Nathalia Garcia",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 10,
-         "register": 1318,
-         "email": "leonardo.lima@cliente.com",
-         "fullName": "Leonardo Lima",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 11,
-         "register": 3564,
-         "email": "giulia.scarppa@cliente.com",
-         "fullName": "Giulia Scarppa",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 12,
-         "register": 9178,
-         "email": "michael.pereira@cliente.com",
-         "fullName": "Michael Pereira",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 13,
-         "register": 6870,
-         "email": "natan.franco@cliente.com",
-         "fullName": "Natan Franco",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 14,
-         "register": 5723,
-         "email": "otávio.costa@cliente.com",
-         "fullName": "Otávio Costa",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 15,
-         "register": 1996,
-         "email": "thales.ferreira@cliente.com",
-         "fullName": "Thales Ferreira",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 16,
-         "register": 2049,
-         "email": "anna.alves@cliente.com",
-         "fullName": "Anna Alves",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 17,
-         "register": 1694,
-         "email": "alvaro.souza@cliente.com",
-         "fullName": "Alvaro Souza",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 18,
-         "register": 8120,
-         "email": "marcela.santos@cliente.com",
-         "fullName": "Marcela Santos",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      },
-      {
-         "id": 19,
-         "register": 2710,
-         "email": "ana.oliveira@cliente.com",
-         "fullName": "Ana Oliveira",
-         "like": {
-            "qnt": 0,
-            "strings": []
-         },
-         "work": {
-            "qnt": 0,
-            "strings": []
-         },
-         "proud": {
-            "qnt": 0,
-            "strings": []
-         },
-         "colaboration": {
-            "qnt": 0,
-            "strings": []
-         }
-      }
-   ]
+	"users": [
+		{
+			"id": 1,
+			"register": 3748,
+			"email": "lucas.fernandes@cliente.com",
+			"fullName": "Lucas Fernandes",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 2,
+			"register": 2482,
+			"email": "pedro.lima@cliente.com",
+			"fullName": "Pedro Lima",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 3,
+			"register": 6449,
+			"email": "maria.julianelli@cliente.com",
+			"fullName": "Maria Julianelli",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 4,
+			"register": 2749,
+			"email": "kevin.restom@cliente.com",
+			"fullName": "Kevin Restom",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 5,
+			"register": 4128,
+			"email": "amanda.amorim@cliente.com",
+			"fullName": "Amanda Amorim",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 6,
+			"register": 9252,
+			"email": "fernanda.silva@cliente.com",
+			"fullName": "Fernanda Silva",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 7,
+			"register": 5945,
+			"email": "carla.pereira@cliente.com",
+			"fullName": "Carla Pereira",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 8,
+			"register": 4879,
+			"email": "pedro.matos@cliente.com",
+			"fullName": "Pedro Matos",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 9,
+			"register": 1827,
+			"email": "nathalia.garcia@cliente.com",
+			"fullName": "Nathalia Garcia",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 10,
+			"register": 1318,
+			"email": "leonardo.lima@cliente.com",
+			"fullName": "Leonardo Lima",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 11,
+			"register": 3564,
+			"email": "giulia.scarppa@cliente.com",
+			"fullName": "Giulia Scarppa",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 12,
+			"register": 9178,
+			"email": "michael.pereira@cliente.com",
+			"fullName": "Michael Pereira",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 13,
+			"register": 6870,
+			"email": "natan.franco@cliente.com",
+			"fullName": "Natan Franco",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 14,
+			"register": 5723,
+			"email": "otávio.costa@cliente.com",
+			"fullName": "Otávio Costa",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 15,
+			"register": 1996,
+			"email": "thales.ferreira@cliente.com",
+			"fullName": "Thales Ferreira",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 16,
+			"register": 2049,
+			"email": "anna.alves@cliente.com",
+			"fullName": "Anna Alves",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 17,
+			"register": 1694,
+			"email": "alvaro.souza@cliente.com",
+			"fullName": "Alvaro Souza",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 18,
+			"register": 8120,
+			"email": "marcela.santos@cliente.com",
+			"fullName": "Marcela Santos",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		},
+		{
+			"id": 19,
+			"register": 2710,
+			"email": "ana.oliveira@cliente.com",
+			"fullName": "Ana Oliveira",
+			"like": {
+				"qnt": 0,
+				"strings": []
+			},
+			"work": {
+				"qnt": 0,
+				"strings": []
+			},
+			"proud": {
+				"qnt": 0,
+				"strings": []
+			},
+			"colaboration": {
+				"qnt": 0,
+				"strings": []
+			},
+			"totalPoints": 0
+		}
+	]
 }

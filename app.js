@@ -22,30 +22,43 @@ app.get('/', (req, res) => {
 	res.render('index')
 })
 
-const dbPath = path.join(__dirname, 'src', 'databasetest.json')
-
 app.post('/login', async (req, res) => {
 	const { options, user } = req.body
-   
-   res.redirect('/reaction')
+
+	res.redirect(`/reaction/${user}&${options}`)
 })
 
-app.get('/reaction', async (req, res) => {
+const dbPath = path.join(__dirname, 'src', 'databasetest.json')
+app.get('/reaction/:userAcess&:typeAcess', async (req, res) => {
+	const { userAcess, typeAcess } = req.params
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
 	const parsedDb = JSON.parse(db)
 
+   let userNow
+   parsedDb.users.forEach((userItem) => {
+      if(userItem[typeAcess] == userAcess){
+         userNow = userItem
+      }
+   })
+
 	res.render('reaction', {
-		status: 'success',
+		status: 'sucess',
 		data: {
-			users: parsedDb.users,
+			users: userNow,
 		},
 	})
 })
 
-app.get('/ranking', (req, res) => {
-	const { options, user } = req.body
+app.get('/ranking', async (req, res) => {
+   const db = await fs.promises.readFile(dbPath, 'utf-8')
+	const parsedDb = JSON.parse(db)
 
-	res.render('ranking')
+	res.render('ranking', {
+		status: 'sucess',
+		data: {
+			users: orderRanking(parsedDb),
+		},
+	})
 })
 
 // Ler o arquivo, parsear o objeto, modicar objeto, salvar de volta
@@ -63,12 +76,21 @@ app.post('/reactions', async (req, res) => {
 		if (item.id === userFromUserReaction) {
 			item[reason].qnt += 1
 			item[reason].strings.push(phrase)
+         if(reason == 'colaboration'){
+            item.totalPoints += 1
+         } else if(reason == 'like'){
+            item.totalPoints += 2
+         } else if(reason == 'proud'){
+            item.totalPoints += 3
+         } else if(reason == 'work'){
+            item.totalPoints += 4
+         }
 		}
 	})
 
 	await fs.promises.writeFile(dbPath, JSON.stringify(parsedDb, null, 4))
 
-	res.redirect('/reaction')
+	res.redirect('/reaction/:userAcess&:typeAcess')
 })
 
 function findUser({ users }, person) {
@@ -78,6 +100,21 @@ function findUser({ users }, person) {
 		}
 	}
 }
+
+function orderRanking({ users }){
+   function order(a, b){
+      if(a.totalPoints < b.totalPoints){
+         return 1
+      }
+      if(a.totalPoints > b.totalPoints){
+         return -1
+      }
+      return 0
+   }
+
+   return users.sort(order)
+}
+
 
 app.listen(PORT, function () {
 	console.log('O Express está rodando na porta ' + PORT)

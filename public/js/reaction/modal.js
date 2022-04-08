@@ -1,4 +1,4 @@
-function Modal() {
+function ModalAvaliate() {
 	const modalWrapper = document.querySelector('.modal-wrapper')
 
 	const cancelButton = document.querySelector('.button.cancel')
@@ -20,14 +20,15 @@ function Modal() {
 	}
 }
 
+
 const button = document.querySelector('.received_btn').addEventListener('click', () => {
-   Modal().open()
+   ModalAvaliate().open()
 })
 
 // Fechar modal pressionando o ESC
 document.addEventListener('keydown', function(event){
 	if(event.key === "Escape"){
-		Modal().close()
+		ModalAvaliate().close()
 	}
 });
 
@@ -36,8 +37,8 @@ let reactionString = localStorage.getItem('reasonList')
 let reaction = JSON.parse(reactionString)
 
 // Recebendo o usuário da sessão
-let userString = localStorage.getItem('user')
-let user = JSON.parse(userString)
+//let userString = localStorage.getItem('user')
+//let user = JSON.parse(userString)
 
 // Adicionando os colegas de trabalho no select
 const div = document.querySelector('.list-choice-objects')

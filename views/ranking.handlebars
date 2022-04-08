@@ -1,10 +1,20 @@
+<header id='header'>
+   <div class='header container'>
+      <div class='header_title'>
+         <img class="header_logo" src="/assets/logo_collaborators.png" alt="Logo do site">
+         <h1><span class="header_span">.</span>collaborators</h1>
+      </div>
+      <p class='header_text'>
+         Avalie seu colega e colabore com o avanço da equipe
+      </p>
+      <label for='switch' class='label_checkbox'>
+         <input type='checkbox' id='switch' />
+      </label>
+   </div>
+</header>
+
 <main>
 	<section class='ranking container'>
-         <!--<button
-            class='login_form__btn login_form__btn2 ranking_btn'
-            value='Like'
-            id='like'
-         >-->
 
 		<div class='ranking_view active'>
 			<div class="view_header">
@@ -13,13 +23,141 @@
          </div>
 			<ul class='view_list'>
 				<ul class='view_list__tops'>
-
+               <li class="view_list__itemstop top1">
+                  <img src="../assets/1_place.png" alt="Primeiro Lugar" class="view_list__items___img">
+                  <h3>{{data.users.[0].fullName}}</h3>
+                  <p class="view_list__items___total">{{data.users.[0].totalPoints}}</p>
+               </li>
+               <li class="view_list__itemstop top2">
+                  <img src="../assets/2_place.png" alt="Segundo Lugar" class="view_list__items___img">
+                  <h3>{{data.users.[1].fullName}}</h3>
+                  <p class="view_list__items___total">{{data.users.[1].totalPoints}}</p>
+               </li>
+               <li class="view_list__itemstop top3">
+                  <img src="../assets/3_place.png" alt="Terceiro Lugar" class="view_list__items___img">
+                  <h3>{{data.users.[2].fullName}}</h3>
+                  <p class="view_list__items___total">{{data.users.[2].totalPoints}}</p>
+               </li>
 				</ul>
+            <div>
+               <ul class="view_list__left">
+                  <li class="view_list__items">
+                     <h3>4º Lugar - {{data.users.[3].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[3].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>5º Lugar - {{data.users.[4].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[4].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>6º Lugar - {{data.users.[5].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[5].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>7º Lugar - {{data.users.[6].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[6].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>8º Lugar - {{data.users.[7].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[7].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>9º Lugar - {{data.users.[8].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[8].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>10º Lugar - {{data.users.[9].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[9].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>11º Lugar - {{data.users.[10].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[10].totalPoints}}</span>
+                     </p>
+                  </li>
+               </ul>
+               <ul class="view_list__right">
+                  <li class="view_list__items">
+                     <h3>12º Lugar - {{data.users.[11].fullName}}</h3>
+                     <p class="view_list__items___total">Pontuação total de reações:
+                        <span>{{data.users.[11].totalPoints}}</span></p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>13º Lugar - {{data.users.[12].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[12].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>14º Lugar - {{data.users.[13].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[13].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>15º Lugar - {{data.users.[14].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[14].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>16º Lugar - {{data.users.[15].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[15].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>17º Lugar - {{data.users.[16].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[16].totalPoints}}</span>
+                     </p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>18º Lugar - {{data.users.[17].fullName}}</h3>
+                     <p class="view_list__items___total">Pontuação total de reações:
+                        <span>{{data.users.[17].totalPoints}}</span></p>
+                  </li>
+                  <li class="view_list__items">
+                     <h3>19º Lugar - {{data.users.[18].fullName}}</h3>
+                     <p class="view_list__items___total">
+                        Pontuação total de reações:
+                        <span>{{data.users.[18].totalPoints}}</span>
+                     </p>
+                  </li>
+               </ul>
+            </div>
 			</ul>
 		</div>
 	</section>
 
-	<a href='/reaction'>
+   <a href='/reaction'>
 		<div class='change_page'>
 			<i class='icon-heart'></i>
 		</div>
@@ -30,6 +168,24 @@
 			<i class='icon-award'></i>
 		</div>
 	</a>
+
+   <a>
+		<div class='change_page'>
+			<i class='icon-log-out'></i>
+		</div>
+	</a>
+
+   <div class='modal-wrapper-logout'>
+      <div class='modal-logout'>
+         
+         <label for="logout">Deseja mesmo finalizar a sessão?</label>
+
+         <form action='/reactions' method='POST'>
+            <input name="logout" id="cancel" type="button" value="Cancelar">
+            <input name="logout" id="logout" type="button" value="Sair">
+         </form>
+      </div>
+   </div>
 
    <div class='modal_wrapper'>
 	<div class='modal'>
@@ -79,3 +235,4 @@
 <script src='js/darkMode.js'></script>
 <script src='js/ranking/ranking.js'></script>
 <script src="js/ranking/infoModal.js"></script>
+<script src="js/reaction/logoutModal.js"></script>
