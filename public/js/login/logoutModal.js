@@ -32,3 +32,10 @@ document.addEventListener('keydown', function(event){
 }
 
 Modal()
+
+const logout = document.getElementById('logout')
+const formLogout = document.querySelector('form[action="/logout"]')
+
+logout.addEventListener('click', () => {
+   formLogout.submit()
+})

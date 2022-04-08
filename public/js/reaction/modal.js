@@ -1,6 +1,3 @@
-let userString = localStorage.getItem('user')
-let user = JSON.parse(userString)
-
 function ModalAvaliate() {
 	const modalWrapper = document.querySelector('.modal-wrapper')
 
@@ -36,14 +33,14 @@ const button = document.querySelector('.received_btn').addEventListener('click',
    ModalAvaliate().open()
 })
 
-
 // Recebendo as reações para pegar os membros
-let reactionString = localStorage.getItem('reasonList')
-let reaction = JSON.parse(reactionString)
+let membersString = localStorage.getItem('membersList')
+let members = JSON.parse(membersString)
 
-// Recebendo o usuário da sessão
-//let userString = localStorage.getItem('user')
-//let user = JSON.parse(userString)
+// Capturando o usuário da sessão
+const header= document.querySelector('.header_text')
+const headerArray = header.innerHTML.split(' ')
+const user = `${headerArray[1]} ${headerArray[2]}`.replace(',', '')
 
 // Adicionando os colegas de trabalho no select
 const div = document.querySelector('.list-choice-objects')
@@ -51,16 +48,16 @@ div.innerHTML = ''
 
 // Criando o select para o membro escolhido e verificando que não está dando como opção o próprio usuário
 for(let i = 0; i < 19; i++){
-   if(user.id != reaction[i].id) {
+   if(user != members[i].fullName) {
       const label = document.createElement('label')
 
       const input = document.createElement('input')
       input.setAttribute('type', 'radio')
       input.setAttribute('name', 'person')
-      input.setAttribute('value', reaction[i].register)
+      input.setAttribute('value', members[i].register)
 
       const span = document.createElement('span')
-      const spanTxt = document.createTextNode(reaction[i].fullName)
+      const spanTxt = document.createTextNode(members[i].fullName)
       span.appendChild(spanTxt)
 
       label.appendChild(input)

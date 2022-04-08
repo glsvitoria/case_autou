@@ -32,4 +32,3 @@ document.addEventListener('keydown', function(event){
 		ModalInformation().close()
 	}
 });
-

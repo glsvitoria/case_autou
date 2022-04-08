@@ -6,13 +6,19 @@
    --background-reaction-item: white;
    --logo_color: black;
    --user: #98FA62;
+   --user-bg: var(--text-logo-grey);
    --degrade: #FFF;
+
+   --filter: brightness(3);
 }
 
 .dark_mode:root {
-   --user: #5568E7;
    --degrade: var(--background-reaction-item);
    --text-logo-grey: #68928c;
+
+   --user-bg: var(--border);
+
+   --filter: brightness(1);
 }
 
 main {
@@ -82,11 +88,19 @@ main {
 }
 
 li.userLogin {
-   border: 2.5px solid var(--text-logo-grey);
    font-weight: bold;
-   background-color: var(--background-reaction);
+   filter: contrast(1);
    padding: .6rem;
+}
+
+.view_list__tops li.userLogin {
+   background-color: var(--pink-blue);
+}
+
+.view_list div li.userLogin {
+   background-color: var(--user-bg);
    margin-left: -.6rem;
+   filter: var(--filter);
 }
 
 li.userLogin h3::before {
@@ -97,6 +111,8 @@ li.userLogin h3::before {
    display: flex;
    justify-content: center;
    align-items: center;
+
+   filter:contrast(1.2);
 
    padding: 1rem;
 
