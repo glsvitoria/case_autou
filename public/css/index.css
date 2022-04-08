@@ -7,41 +7,58 @@
 
 :root {
    --logo-color:#3a3a3a;
-   --text-color: #00635A;
-   --text-color2: black;
-   --text-color3: #5568E7;
-   --text-color4: var(--logo-color);
-   --modal-text: var(--logo-color);
-   --button-color: #5568E7;
-   --button-text: #FFF;
+
+   --background-body: #E8E2EC;
+   --background-header-footer: #FFF;
+   --background-main: #F7F6FB;
    --background-input: #F7F6FB;
-   --background: #E8E2EC;
-   --background-color1: #FFF;
-   --background-color2:#F7F6FB;
+   
    --background-login: #FFF;
-   --green: #98FA62;
+   --login-text-color: var(--logo-color);
+
+   --background-reaction:#F7F6FB;
+   --background-reaction-item: #FFF;
+   --title-reaction-item: #9ddbd3;
+   --reaction-text: #00635A;
+
+   --ranking-text: var(--reaction-text);
+   --ranking-tops-text: var(--logo-color);
+   
+   --error: rgb(255, 50, 50);
+
+   --text-logo-grey: var(--logo-color);
+   
    --border: var(--background-input);
+   --green: #98FA62;
    --orange: #f59e22;
+   --pink-blue: #5568E7;
+   --white-black: #FFF;
 }
 
 .dark_mode:root {
    --logo-color:#3a3a3a;
-   --text-color: #22A1F5;
-   --text-color2: var(--logo-color);
-   --text-color3: #22A1F5;
-   --text-color4: white;
-   --modal-text: #9ddbd3;
-   --button-color: #22A1F5;
-   --button-text: #000;
-   --background-input: var(--logo-color);
-   --background: #35393b;
-   --background-color1: #1B1D1E;
-   --background-color2: var(--background-color1);
-   --background-color3: #222425;
-   --background-color4: var(--background-color3);
-   --background-login: var(--background-color1);
-   --green: #98FA62;
+
+   --background-body: #35393b; /*--background*/
+   --background-header-footer: #1B1D1E; /*--background-color1*/
+   --background-main: var(--background-color3);/*--background-color4*/
+   --background-input: var(--text-logo-grey);
+   
+   --background-login: var(--background-header-footer);
+   --login-text-color: var(--text-logo-grey);
+
+   --background-reaction: var(--background-header-footer);/*--background-color4*/
+   --background-reaction-item: #222425;
+   --title-reaction-item:var(--text-logo-grey);
+
+   --ranking-tops-text: white;
+   --ranking-text: var(--pink-blue);
+   
+   --text-logo-grey: #9ddbd3;
+   
    --border: rgb(85, 85, 85);
+   --green: #98FA62;
+   --pink-blue: #22A1F5;
+   --white-black: #000;
 }
 
 
@@ -94,13 +111,13 @@
 body {
    font-family: 'Poppins', sans-serif;
    margin: 2rem auto 2rem auto;
-   background-color: var(--background);
+   background-color: var(--background-body);
 
    max-width: 1600px;
 }
 
 header, footer {
-   background-color: var(--background-color1);
+   background-color: var(--background-header-footer);
 }
 
 header {
@@ -150,13 +167,13 @@ footer {
 }
 
 .header_text {
-   color: var(--text-color3);
+   color: var(--pink-blue);
    margin-right: 5vw;
 }
 
 /*=====  LOGIN  =====*/
 .login {
-   background-color: var(--background-color4);
+   background-color: var(--background-main);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -171,13 +188,11 @@ footer {
    border-radius: 2rem;
    border: 1px solid var(--border);
 
-   color: var(--logo-color);
+   color: var(--login-text-color);
 
    width: 25vw;
    max-width: 400px;
    min-width: 250px;
-
-   color: var(--text-color2);
 }
 
 html.dark_mode #login_area {
@@ -222,15 +237,12 @@ html.dark_mode #login_area {
 }
 
 #login_form__input {
-   width: calc(100%);
+   width: 100%;
    padding: 1rem;
 
    border-radius: 0.4rem;
-
    border: none;
-}
 
-#login_form__input {
    background-color: var(--background-input);
 }
 
@@ -238,19 +250,19 @@ html.dark_mode #login_area {
    font-weight: bold;
 }
 
-.login_form__btn {
+.form__btn { /*login_form_btn*/
    display: flex;
    justify-content: flex-start;
    align-items: center;
 
    margin-top: 2rem;
-   width: 100%;
    padding: 1rem 0;
+   width: 100%;
 
-   color: var(--button-text);
+   color: var(--white-black);
 
    text-transform: uppercase;
-   background-color: var(--button-color);
+   background-color: var(--pink-blue);
    border: none;
    border-radius: .5rem;
 
@@ -261,22 +273,21 @@ html.dark_mode #login_area {
    display: inline-block;
 }
 
-.login_form__btn:hover {
+.form__btn:hover {
    filter: brightness(0.8);
    cursor: pointer;
 }
 
 #loginButton i {
-   color: var(--button-text);
+   color: var(--white-black);
    font-size: 1.2rem;
    margin: 0 calc(50% - 4rem) 0 2rem;
 }
 
 .error {
-   color: red;
+   color: var(--error);
    margin: 1rem 0 -.5rem 0;
 }
-
 
 /*=====  FOOTER  =====*/
 .footer {
@@ -289,7 +300,7 @@ html.dark_mode #login_area {
 
    padding: 2rem 0;
 
-   color: #585858;
+   color: var(--logo-color);
 }
 
 @media screen and (max-width: 1600px){

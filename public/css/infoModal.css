@@ -1,5 +1,5 @@
-@import url(index.css);
-@import url(ranking.css);
+@import url('index.css');
+@import url('ranking.css');
 
 .modal_wrapper_info.active {
 	visibility: visible;
@@ -22,7 +22,6 @@
 
 .modal_wrapper_info .modal {
 	width: min(30rem, 60%);
-	background: var(--white);
 	margin: auto;
 	padding: 4rem;
 
@@ -36,8 +35,8 @@
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 
-	background-color: var(--background-color1);
-	color: var(--modal-text);
+	background-color: var(--background-header-footer);
+	color: var(--text-logo-grey);
 }
 
 .modal_header {
@@ -63,14 +62,18 @@ table {
 
    text-align: center;
 
-   border: 1px solid var(--modal-text);
+   border: 1px solid var(--text-logo-grey);
    padding: .4rem 0;
 
    border-spacing: 2rem .4rem;
 }
 
 thead tr {
-   background-color: var(--border);
+   background-color: var(--title-reaction-item);
+}
+
+html.dark_mode thead tr {
+   background-color: rgb(85, 85, 85);
 }
 
 thead th:first-child {

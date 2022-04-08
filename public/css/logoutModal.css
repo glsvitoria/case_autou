@@ -1,5 +1,5 @@
-@import url(index.css);
-@import url(reaction.css);
+@import url('index.css');
+@import url('reaction.css');
 
 .modal-wrapper-logout.active {
 	visibility: visible;
@@ -22,7 +22,6 @@
 
 .modal-wrapper-logout .modal-logout {
 	width: min(40rem, 75%);
-	background: var(--white);
 	margin: auto;
 	padding: 4rem;
 
@@ -36,8 +35,8 @@
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
 
-	background-color: var(--background-color1);
-	color: var(--modal-text);
+	background-color: var(--background-header-footer);
+	color: var(--text-logo-grey);
 }
 
 .modal-wrapper-logout .modal-logout label {
@@ -56,7 +55,7 @@
 .modal-wrapper-logout .modal-logout input {
    cursor: pointer;
    padding: 1rem 2rem;
-   background-color: var(--button-color);
+   background-color: var(--pink-blue);
 
    font-size: 1.2rem;
 
@@ -66,10 +65,10 @@
 
 .modal-wrapper-logout .modal-logout input:first-child {
    background-color: transparent;
-   color: var(--modal-text);
+   color: var(--text-logo-grey);
 }
 
 .modal-wrapper-logout .modal-logout input + input {
-   background-color: rgb(255, 64, 64);
+   background-color: var(--error);
    width: 50%;
 }

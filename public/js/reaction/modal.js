@@ -8,6 +8,13 @@ function ModalAvaliate() {
 
 	cancelButton.addEventListener('click', close)
 
+   // Fechar modal pressionando o ESC
+   document.addEventListener('keydown', function(event){
+      if(event.key === "Escape"){
+         close()
+      }
+   })
+
 	function open() {
 		//Funcionalidade de atribuir a classe active para a modal
 		modalWrapper.classList.add('active')
@@ -23,17 +30,12 @@ function ModalAvaliate() {
 	}
 }
 
+ModalAvaliate()
 
 const button = document.querySelector('.received_btn').addEventListener('click', () => {
    ModalAvaliate().open()
 })
 
-// Fechar modal pressionando o ESC
-document.addEventListener('keydown', function(event){
-	if(event.key === "Escape"){
-		ModalAvaliate().close()
-	}
-});
 
 // Recebendo as reações para pegar os membros
 let reactionString = localStorage.getItem('reasonList')
@@ -67,11 +69,6 @@ for(let i = 0; i < 19; i++){
       div.appendChild(label)
    }
 }
-
-/*<label>
-   <input type='radio' name='month' />
-   <span>January</span>
-</label>*/
 
 // Criando o input select para as reações
 const divReasons = document.querySelector('.options .list-choice-objects')

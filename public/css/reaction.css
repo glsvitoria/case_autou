@@ -5,10 +5,11 @@
 }
 
 main {
-   background-color: var(--background-color2);
+   background-color: var(--background-reaction);
    position: relative;
 }
 
+/*===== REACTION RECEIVED AREA =====*/
 .received {
    padding: 2rem 0;
 }
@@ -22,7 +23,7 @@ main {
 }
 
 .received_title {
-   color: var(--logo-color);
+   color: var(--text-logo-grey);
    font-size: 2rem;
 }
 
@@ -43,22 +44,23 @@ main {
 }
 
 .received_btn i {
-   color: var(--button-text);
+   color: var(--white-black);
    font-size: 1.2rem;
 
    margin: 0 2.5rem 0 1rem;
 }
 
 .received_list__items {
-   color: var(--text-color);
+   color: var(--reaction-text);
 
    padding: 1rem;
 
-   background-color: var(--background-color3);
+   background-color: var(--background-reaction-item);
 }
 
 .received_list__items > h1 {
    color: #9ddbd3;
+   filter: brightness(0.9);
    margin-bottom: .6rem;
 }
 
@@ -70,6 +72,7 @@ main {
    margin-top: 1rem;
 }
 
+/*===== BUTTONS TO CHANGE PAGE =====*/
 .change_page {
    position: absolute;
    top: 10rem;
@@ -79,7 +82,7 @@ main {
    height: 60px;
    shape-outside: circle(50% at 30%);
    clip-path: circle(50% at 30%);
-   background: var(--text-color3);
+   background: var(--pink-blue);
 
    transition: 200ms;
 }
@@ -102,7 +105,7 @@ form + form + form .change_page {
 }
 
 .change_page i {
-   color: var(--button-text);
+   color: var(--white-black);
    font-size: 2rem;
    margin: 0 5%;
 
@@ -116,6 +119,8 @@ form + form + form .change_page {
 .change_page:hover {
    cursor: pointer;
    clip-path: circle(50% at 50%);
+
+   filter: brightness(0.9);
 }
 
 .change_page:active {
