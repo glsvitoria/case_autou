@@ -84,11 +84,11 @@ main {
    transition: 200ms;
 }
 
-a + a .change_page {
+form + form .change_page {
    top: 16rem;
 }
 
-a + a + a .change_page {
+form + form + form .change_page {
    top: 22rem;
 }
 

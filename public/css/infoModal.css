@@ -1,12 +1,12 @@
 @import url(index.css);
 @import url(ranking.css);
 
-.modal_wrapper.active {
+.modal_wrapper_info.active {
 	visibility: visible;
 	opacity: 1;
 }
 
-.modal_wrapper {
+.modal_wrapper_info {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -20,7 +20,7 @@
 	opacity: 0;
 }
 
-.modal_wrapper .modal {
+.modal_wrapper_info .modal {
 	width: min(30rem, 60%);
 	background: var(--white);
 	margin: auto;

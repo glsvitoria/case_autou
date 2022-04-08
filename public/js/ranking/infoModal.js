@@ -1,5 +1,5 @@
-function Modal() {
-	const modalWrapper = document.querySelector('.modal_wrapper')
+function ModalInformation() {
+	const modalWrapper = document.querySelector('.modal_wrapper_info')
 
 	function open() {
 		//Funcionalidade de atribuir a classe active para a modal
@@ -19,17 +19,17 @@ function Modal() {
 const btn = document.querySelector('.view_header i')
 
 btn.addEventListener('click', () => {
-   Modal().open()
+   ModalInformation().open()
 })
 
 const btnClose = document.querySelector('.icon-x')
 
-btnClose.addEventListener('click', () => Modal().close())
+btnClose.addEventListener('click', () => ModalInformation().close())
 
 // Fechar modal pressionando o ESC
 document.addEventListener('keydown', function(event){
 	if(event.key === "Escape"){
-		Modal().close()
+		ModalInformation().close()
 	}
 });
 

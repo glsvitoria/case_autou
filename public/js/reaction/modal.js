@@ -1,3 +1,6 @@
+let userString = localStorage.getItem('user')
+let user = JSON.parse(userString)
+
 function ModalAvaliate() {
 	const modalWrapper = document.querySelector('.modal-wrapper')
 
@@ -44,7 +47,7 @@ let reaction = JSON.parse(reactionString)
 const div = document.querySelector('.list-choice-objects')
 div.innerHTML = ''
 
-// Criando o label e verificando que não está dando como opção o próprio usuário
+// Criando o select para o membro escolhido e verificando que não está dando como opção o próprio usuário
 for(let i = 0; i < 19; i++){
    if(user.id != reaction[i].id) {
       const label = document.createElement('label')
@@ -71,7 +74,7 @@ for(let i = 0; i < 19; i++){
 </label>*/
 
 // Buscando os resultados do modal
-const submitBtn = document.querySelector('.red')
+/*const submitBtn = document.querySelector('.red')
 const form = document.querySelector('.modal form')
 submitBtn.addEventListener('click', (e) => {
 	e.preventDefault()
@@ -87,8 +90,9 @@ submitBtn.addEventListener('click', (e) => {
    // Enviar o form
    form.submit()
    
-})
+})*/
 
+// Criando o input select para as reações
 const divReasons = document.querySelector('.options .list-choice-objects')
 for(let i = 0; i < 4; i++){
    const label = document.createElement('label')

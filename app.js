@@ -41,23 +41,42 @@ app.get('/reaction/:userAcess&:typeAcess', async (req, res) => {
       }
    })
 
+
 	res.render('reaction', {
 		status: 'sucess',
 		data: {
-			users: userNow,
-		},
+         users: userNow,
+         acess: {
+            userAcess,
+            typeAcess
+         }
+		}
 	})
 })
 
-app.get('/ranking', async (req, res) => {
+app.get('/ranking/:userAcess&:typeAcess', async (req, res) => {
+   const { userAcess, typeAcess } = req.params
    const db = await fs.promises.readFile(dbPath, 'utf-8')
 	const parsedDb = JSON.parse(db)
 
+   let userNow
+   parsedDb.users.forEach((userItem) => {
+      if(userItem[typeAcess] == userAcess){
+         userNow = userItem
+      }
+   })
+   
 	res.render('ranking', {
 		status: 'sucess',
 		data: {
 			users: orderRanking(parsedDb),
+         userNow,
+         acess: {
+            userAcess,
+            typeAcess
+         }
 		},
+      
 	})
 })
 
@@ -93,6 +112,22 @@ app.post('/reactions', async (req, res) => {
 	res.redirect('/reaction/:userAcess&:typeAcess')
 })
 
+app.get('/toreaction/:userAcess&:typeAcess', (req, res) => {
+   const { userAcess, typeAcess } = req.params
+  
+   res.redirect(`/reaction/${userAcess}&${typeAcess}`)
+})
+
+app.get('/toranking/:userAcess&:typeAcess', (req, res) => {
+   const { userAcess, typeAcess } = req.params
+   
+   res.redirect(`/ranking/${userAcess}&${typeAcess}`)
+})
+
+app.get('/logout', (req, res) => {
+   res.redirect('/')
+})
+
 function findUser({ users }, person) {
 	for (let user of users) {
 		if (user.register == person) {
@@ -114,7 +149,6 @@ function orderRanking({ users }){
 
    return users.sort(order)
 }
-
 
 app.listen(PORT, function () {
 	console.log('O Express está rodando na porta ' + PORT)

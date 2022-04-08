@@ -5,7 +5,7 @@
                <h1><span class="header_span">.</span>collaborators</h1>
 				</div>
 				<p class='header_text'>
-					Olá {{data.users.fullName}}, veja as reações que você recebeu
+					Olá {{data.users}}, veja as reações que você recebeu
 				</p>
 				<label for='switch' class='label_checkbox'>
 					<input type='checkbox' id='switch' />
@@ -39,14 +39,14 @@
 				</li>
 
 				<li class='received_list__items'>
-					<h1>Colaboração recebidos: <span>{{data.users.proud.qnt}}</h1>
+					<h1>Colaboração recebidos: <span>{{data.users.colaboration.qnt}}</h1>
 					<p>{{data.users.colaboration.strings.[0]}}</p>
                <p>{{data.users.colaboration.strings.[1]}}</p>
                <p>{{data.users.colaboration.strings.[2]}}</p>
                <p>{{data.users.colaboration.strings.[3]}}</p>
 				</li>
             <li class='received_list__items'>
-					<h1>Orgulho recebidos recebidos: <span>{{data.users.colaboration.qnt}}</h1>
+					<h1>Orgulho recebidos recebidos: <span>{{data.users.proud.qnt}}</h1>
 					<p>{{data.users.proud.strings.[0]}}</p>
                <p>{{data.users.proud.strings.[1]}}</p>
                <p>{{data.users.proud.strings.[2]}}</p>
@@ -56,23 +56,23 @@
 		</div>
 	</section>
 
-	<a href='/reaction'>
+	<form action="/toreaction/{{data.acess.userAcess}}&{{data.acess.typeAcess}}" class="gets" method="GET">
 		<div class='change_page'>
 			<i class='icon-heart'></i>
 		</div>
-	</a>
+	</form>
 
-	<a href='/ranking'>
+	<form action="/toranking/{{data.acess.userAcess}}&{{data.acess.typeAcess}}" class="gets" method="GET">
 		<div class='change_page'>
 			<i class='icon-award'></i>
 		</div>
-	</a>
+	</form>
 
-   <a>
+   <form action="/logout" method="GET">
 		<div class='change_page'>
 			<i class='icon-log-out'></i>
 		</div>
-	</a>
+	</form>
 
    <div class='modal-wrapper-logout'>
       <div class='modal-logout'>
@@ -135,4 +135,4 @@
 <script src='/js/darkMode.js'></script>
 <script src='/js/reaction/reaction.js'></script>
 <script src='/js/reaction/modal.js'></script>
-<script src="/js/reaction/logoutModal.js"></script>
+<script src="/js/login/logoutModal.js"></script>

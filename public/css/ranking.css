@@ -183,10 +183,6 @@ li.userLogin h3::before {
    width: 11rem;
 }
 
-.view_list__itemstop span {
-   font-size: 1.5rem;
-}
-
 .view_list__itemstop h3::before {
    content: '';
 }
@@ -197,10 +193,6 @@ li.userLogin h3::before {
    margin-right: 1rem;
 }
 
-.view_list__items span, .view_list__itemstop span {
-   color: var(--green);
-   font-weight: bold;
-}
 
 .view_list__items + li {
    margin-top: 1.5rem;
