@@ -73,25 +73,6 @@ for(let i = 0; i < 19; i++){
    <span>January</span>
 </label>*/
 
-// Buscando os resultados do modal
-/*const submitBtn = document.querySelector('.red')
-const form = document.querySelector('.modal form')
-submitBtn.addEventListener('click', (e) => {
-	e.preventDefault()
-
-   let memberChoosedByUser
-	const input = document.querySelectorAll('.list-choice-objects label input')
-   for(let item of input){
-      if(item.checked){
-         memberChoosedByUser = item.value
-      }
-   }
-
-   // Enviar o form
-   form.submit()
-   
-})*/
-
 // Criando o input select para as reações
 const divReasons = document.querySelector('.options .list-choice-objects')
 for(let i = 0; i < 4; i++){

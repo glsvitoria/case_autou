@@ -93,7 +93,7 @@
 	<div class='modal'>
 		<h2>Enviar uma reação</h2>
 
-		<form action='/reactions' method='POST'>
+		<form action='/reactions/{{data.acess.userAcess}}&{{data.acess.typeAcess}}' method='POST'>
 			<label class='sr-only' for='person'> A quem você quer reagir? </label>
 
 			<div class='list-choice list_one'>

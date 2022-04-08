@@ -81,8 +81,9 @@ app.get('/ranking/:userAcess&:typeAcess', async (req, res) => {
 })
 
 // Ler o arquivo, parsear o objeto, modicar objeto, salvar de volta
-app.post('/reactions', async (req, res) => {
+app.post('/reactions/:userAcess&:typeAcess', async (req, res) => {
 	const { person, reason, phrase } = req.body
+   const { userAcess, typeAcess } = req.params
 
 	// Ler o banco de dados
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
@@ -109,7 +110,7 @@ app.post('/reactions', async (req, res) => {
 
 	await fs.promises.writeFile(dbPath, JSON.stringify(parsedDb, null, 4))
 
-	res.redirect('/reaction/:userAcess&:typeAcess')
+	res.redirect(`/reaction/${userAcess}&${typeAcess}`)
 })
 
 app.get('/toreaction/:userAcess&:typeAcess', (req, res) => {
