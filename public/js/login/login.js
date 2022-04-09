@@ -3,8 +3,7 @@ const acessLogin = [
 		id: 1,
 		register: 3748,
 		email: 'lucas.fernandes@cliente.com',
-		name: 'Lucas',
-		lastName: 'Fernandes',
+      fullName: 'Lucas Fernandes',
 		department: 'Financeiro',
 		office: 'Analista',
 	},
@@ -12,8 +11,7 @@ const acessLogin = [
 		id: 2,
 		register: 2482,
 		email: 'pedro.lima@cliente.com',
-		name: 'Pedro',
-		lastName: 'Lima',
+      fullName: 'Pedro Lima',
 		department: 'Logistica',
 		office: 'Transportador',
 	},
@@ -21,8 +19,7 @@ const acessLogin = [
 		id: 3,
 		register: 6449,
 		email: 'maria.julianelli@cliente.com',
-		name: 'Maria',
-		lastName: 'Julianelli',
+      fullName: 'Maria Julianelli',
 		department: 'Logistica',
 		office: 'Planejador',
 	},
@@ -30,8 +27,7 @@ const acessLogin = [
 		id: 4,
 		register: 2749,
 		email: 'kevin.restom@cliente.com',
-		name: 'Kevin',
-		lastName: 'Restom',
+      fullName: 'Kevin Restom',
 		department: 'Logistica',
 		office: 'Transportador',
 	},
@@ -39,8 +35,7 @@ const acessLogin = [
 		id: 5,
 		register: 4128,
 		email: 'amanda.amorim@cliente.com',
-		name: 'Amanda',
-		lastName: 'Amorim',
+      fullName: 'Amanda Amorim',
 		department: 'Suprimentos',
 		office: 'Operador',
 	},
@@ -48,8 +43,7 @@ const acessLogin = [
 		id: 6,
 		register: 9252,
 		email: 'fernanda.silva@cliente.com',
-		name: 'Fernanda',
-		lastName: 'Silva',
+      fullName: 'Fernanda Silva',
 		department: 'Suprimentos',
 		office: 'Operador',
 	},
@@ -57,8 +51,7 @@ const acessLogin = [
 		id: 7,
 		register: 5945,
 		email: 'carla.pereira@cliente.com',
-		name: 'Carla',
-		lastName: 'Pereira',
+      fullName: 'Carla Pereira',
 		department: 'Suprimentos',
 		office: 'Almoxarife',
 	},
@@ -66,8 +59,7 @@ const acessLogin = [
 		id: 8,
 		register: 4879,
 		email: 'pedro.matos@cliente.com',
-		name: 'Pedro',
-		lastName: 'Matos',
+      fullName: 'Pedro Matos',
 		department: 'Suprimentos',
 		office: 'Almoxarife',
 	},
@@ -75,8 +67,7 @@ const acessLogin = [
 		id: 9,
 		register: 1827,
 		email: 'nathalia.garcia@cliente.com',
-		name: 'Nathalia',
-		lastName: 'Garcia',
+      fullName: 'Nathalia Garcia',
 		department: 'Materiais',
 		office: 'Transportador',
 	},
@@ -84,8 +75,7 @@ const acessLogin = [
 		id: 10,
 		register: 1318,
 		email: 'leonardo.lima@cliente.com',
-		name: 'Leonardo',
-		lastName: 'Lima',
+      fullName: 'Leonardo Lima',
 		department: 'Materiais',
 		office: 'Transportador',
 	},
@@ -102,8 +92,7 @@ const acessLogin = [
 		id: 12,
 		register: 9178,
 		email: 'michael.pereira@cliente.com',
-		name: 'Michael',
-		lastName: 'Pereira',
+      fullName: 'Michael Pereira',
 		department: 'Materiais',
 		office: 'Manutenção',
 	},
@@ -111,8 +100,7 @@ const acessLogin = [
 		id: 13,
 		register: 6870,
 		email: 'natan.franco@cliente.com',
-		name: 'Natan',
-		lastName: 'Franco',
+      fullName: 'Natan Franco',
 		department: 'Materiais',
 		office: 'Operador',
 	},
@@ -120,8 +108,7 @@ const acessLogin = [
 		id: 14,
 		register: 5723,
 		email: 'otávio.costa@cliente.com',
-		name: 'Otávio',
-		lastName: 'Costa',
+      fullName: 'Otávio Costa',
 		department: 'Financeiro',
 		office: 'Analista',
 	},
@@ -129,8 +116,7 @@ const acessLogin = [
 		id: 15,
 		register: 1996,
 		email: 'thales.ferreira@cliente.com',
-		name: 'Thales',
-		lastName: 'Ferreira',
+      fullName: 'Thales Ferreira',
 		department: 'Carga',
 		office: 'Transportador',
 	},
@@ -138,8 +124,7 @@ const acessLogin = [
 		id: 16,
 		register: 2049,
 		email: 'anna.alves@cliente.com',
-		name: 'Anna',
-		lastName: 'Alves',
+      fullName: 'Anna Alves',
 		department: 'Carga',
 		office: 'Transportador',
 	},
@@ -147,8 +132,7 @@ const acessLogin = [
 		id: 17,
 		register: 1694,
 		email: 'alvaro.souza@cliente.com',
-		name: 'Alvaro',
-		lastName: 'Souza',
+      fullName: 'Alvaro Souza',
 		department: 'Suprimentos',
 		office: 'Analista',
 	},
@@ -156,8 +140,7 @@ const acessLogin = [
 		id: 18,
 		register: 8120,
 		email: 'marcela.santos@cliente.com',
-		name: 'Marcela',
-		lastName: 'Santos',
+      fullName: 'Marcela Santos',
 		department: 'Logistica',
 		office: 'Analista',
 	},
@@ -165,16 +148,13 @@ const acessLogin = [
 		id: 19,
 		register: 2710,
 		email: 'ana.oliveira@cliente.com',
-		name: 'Ana',
-		lastName: 'Oliveira',
+      fullName: 'Ana Oliveira',
 		department: 'Carga',
 		office: 'Transportador',
 	}
 ]
 
-let userString = localStorage.getItem('user')
-let user = JSON.parse(userString)
-
+// Função para ser executada quando o botão de submit for clicado e podermos verificar o usuário, salvar no local storage e dar submit do form
 const form = document.querySelector('form')
 const loginButton = document.querySelector('#loginButton')
 loginButton.addEventListener('click', (event) => {
@@ -183,27 +163,39 @@ loginButton.addEventListener('click', (event) => {
    saveUser()
 })
 
+// Verificar se libera o login ou não, caso preciso será gerado um erro para o usuário
+let user
 function verifyLogin() {
+   // Buscar os inputs do usuário
 	const optionChoose = chosenOption()
 	const loginUser = chosenUser()
 
 	for (let item of acessLogin) {
+      // Se for acessar por email
 		if (optionChoose == 'email') {
+         // Se tiver o email na lista de usuário
 			if (item.email == loginUser) {
             user = item
+            localStorage.setItem('membersList', JSON.stringify(acessLogin))
             form.submit()
             break
+         // Se não tiver o email lista de usuário  
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
          }
+      // Se for acessar por matrícula
 		} else if (optionChoose == 'register') {
+         // Se tiver a matrícula na lista de usuário
 			if (item.register == loginUser) {
             user = item
+            localStorage.setItem('membersList', JSON.stringify(acessLogin))
             form.submit()
             break
+         // Se não tiver a matrícula lista de usuário
 			} else if(item.id == 19) {
             createError('Usuário incorreto')
          }
+      // Se algum dos campos ficarem vazios
 		} else if(loginUser === '' || optionChoose === '') {
          if(item.id == 19){
             createError('Preencha o formulário')
@@ -212,6 +204,7 @@ function verifyLogin() {
 	}
 }
 
+// Encontrar os dois campos do form
 function chosenOption() {
 	const loginOption = document.querySelectorAll('input[name=options]')
 	let res = ''
@@ -230,6 +223,7 @@ function chosenUser() {
    return login.value
 }
 
+// Imprimindo o erro na tela para usuário
 function createError(text) {
    let div = document.querySelector('.errorDiv')
    div.innerHTML = ''
@@ -242,6 +236,7 @@ function createError(text) {
 	
 }
 
+// Salvando o usuário no localStorage
 function saveUser() {
    window.localStorage.setItem('user', JSON.stringify(user))
 }

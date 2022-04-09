@@ -40,10 +40,10 @@
 
    --background-body: #35393b; /*--background*/
    --background-header-footer: #1B1D1E; /*--background-color1*/
-   --background-main: var(--background-color3);/*--background-color4*/
+   --background-main: var(--background-login);/*--background-color4*/
    --background-input: var(--text-logo-grey);
    
-   --background-login: var(--background-header-footer);
+   --background-login: var(--background-reaction-item);
    --login-text-color: var(--text-logo-grey);
 
    --background-reaction: var(--background-header-footer);/*--background-color4*/

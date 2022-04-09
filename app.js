@@ -41,7 +41,6 @@ app.get('/reaction/:userAcess&:typeAcess', async (req, res) => {
       }
    })
 
-
 	res.render('reaction', {
 		status: 'sucess',
 		data: {

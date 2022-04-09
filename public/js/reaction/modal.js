@@ -33,6 +33,12 @@ const button = document.querySelector('.received_btn').addEventListener('click',
    ModalAvaliate().open()
 })
 
+const submit = document.querySelector('.buttons button.send_form')
+submit.addEventListener('click', (event) => {
+   event.preventDefault()
+   verifySubmitForm()
+})
+
 // Recebendo as reações para pegar os membros
 let membersString = localStorage.getItem('membersList')
 let members = JSON.parse(membersString)
@@ -98,4 +104,49 @@ for(let i = 0; i < 4; i++){
 
    divReasons.appendChild(label)
 
+}
+
+// Verificar envio do form
+function verifySubmitForm() {
+   const selectMembers = document.querySelectorAll('.list-choice-objects label input[name="person"]')
+   const form =  document.querySelector('.modal form[method="POST"]')
+
+   let isVerificated = 0
+
+   selectMembers.forEach((item) => {
+      if(item.checked){
+         isVerificated++
+      }
+   })
+
+   const selectReaction = document.querySelectorAll('.list_two .list-choice-objects input[name="reason"]')
+   selectReaction.forEach((item) => {
+      if(item.checked){
+         isVerificated++
+      }
+   })
+
+   const inputPhrase = document.getElementById('phrase').value
+   if(inputPhrase !== ''){
+      isVerificated++
+   }
+
+   if(isVerificated === 3){
+      form.submit()
+   } else {
+      createError('Preencha o formulário')
+   }
+}
+
+function createError(text) {
+   const divError = document.querySelector('.div_error')
+   divError.innerHTML = ''
+
+   const p = document.createElement('p')
+   p.classList.add('p_error')
+   const pTxt = document.createTextNode(text)
+   p.appendChild(pTxt)
+
+   divError.appendChild(p)
+   form.appendChild(divError)
 }

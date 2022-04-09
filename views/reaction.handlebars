@@ -5,7 +5,7 @@
                <h1><span class="header_span">.</span>collaborators</h1>
 				</div>
 				<p class='header_text'>
-					Olá <span>{{data.users}}</span>, veja as reações que você recebeu
+					Olá <span>{{data.users.fullName}}</span>, veja as reações que você recebeu
 				</p>
 				<label for='switch' class='label_checkbox'>
 					<input type='checkbox' id='switch' />
@@ -118,10 +118,15 @@
             <input type="text" name="phrase" id="phrase">
          </div>
 
+         <div class="div_error">
+            
+         </div>
+
 			<div class='buttons'>
 				<div class='button grey cancel'>Cancelar</div>
 				<button class='send_form form__btn login_form__btn2'>Enviar reação</button>
 			</div>
+
 		</form>
 	</div>
 </div>
@@ -133,8 +138,6 @@
 </footer>
 
 <script src='/js/darkMode.js'></script>
-<script src='/js/reaction/reaction.js'></script>
 <script src='/js/reaction/modal.js'></script>
-<script src="/js/reaction/membersList.js"></script>
 <script src="/js/navigation.js"></script>
 <script src="/js/login/logoutModal.js"></script>

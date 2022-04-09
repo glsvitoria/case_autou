@@ -1,4 +1,4 @@
-function Modal() {
+function ModalLogout() {
 	const modalWrapper = document.querySelector('.modal-wrapper-logout')
 
 	const cancelButton = document.querySelector('#cancel')
@@ -31,11 +31,17 @@ document.addEventListener('keydown', function(event){
 	}
 }
 
-Modal()
+ModalLogout()
 
 const logout = document.getElementById('logout')
 const formLogout = document.querySelector('form[action="/logout"]')
 
 logout.addEventListener('click', () => {
+   deleteUser()
    formLogout.submit()
 })
+
+function deleteUser() {
+   localStorage.removeItem('user')
+   localStorage.removeItem('membersList')
+}
