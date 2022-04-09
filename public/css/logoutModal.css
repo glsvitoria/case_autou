@@ -72,3 +72,21 @@
    background-color: var(--error);
    width: 50%;
 }
+
+@media screen and (max-width: 600px){
+   .modal-wrapper-logout .modal-logout {
+      padding: 2rem 1rem;
+   }
+
+   .modal-wrapper-logout .modal-logout label {
+      font-size: 1.4rem;
+   }
+
+   .modal-wrapper-logout .modal-logout form {
+      margin-top: 1.6rem;
+   }
+
+   .modal-wrapper-logout .modal-logout form input {
+      font-size: 1rem;
+   }
+}

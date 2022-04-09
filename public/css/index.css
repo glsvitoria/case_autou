@@ -325,8 +325,115 @@ html.dark_mode #login_area {
    }
 
    .header_text {
-      width: 25vw;
       font-size: .9rem;
       text-align: justify;
    }
+}
+
+@media screen and (max-width:850px) {
+
+   .header_logo {
+      width: 6rem;
+   }
+
+   #switch {
+      margin-top: -1rem;
+   }
+
+   .header_text {
+      font-size: .8rem;
+      text-align: justify;
+   }
+}
+
+@media screen and (max-width:725px) {
+
+   #switch {
+      margin-top: -1rem;
+   }
+
+   .header_text {
+      font-size: .8rem;
+      text-align: justify;
+      width: 16rem;
+   }
+}
+
+@media screen and (max-width:625px) {
+
+   .header_text {
+      font-size: .8rem;
+      text-align: justify;
+      width: 10rem;
+   }
+
+   .login_title {
+      font-size: 1.6rem;
+   }
+
+   .login_form__choose___title {
+      font-size: 1rem;
+   }
+
+   .login_form__choose___options {
+      font-size: .9rem;
+   }
+
+   #login_form__input {
+      width: 100%;
+      padding: .8rem;
+   }
+
+   .form__btn {
+      margin-top: 2rem;
+      padding: .8rem 0;
+   }
+}
+
+@media screen and (max-width:550px) {
+
+   .header_text {
+      display: none;
+   }
+}
+
+@media screen and (max-width:425px) {
+
+   body {
+      margin: 1rem;
+   }
+
+   .container {
+      margin-right: 2.5vw;
+      margin-left: 2.5vw;
+   }
+
+   .header_logo {
+      width: 5rem;
+   }
+
+   .header_title h1 {
+      font-size: 1.4rem;
+   }
+
+   #switch {
+      margin-top: -1.4rem;
+   }
+
+   #login_area {
+      min-width: 50vw;
+   }
+
+   .login_form__choose___options {
+      display: grid;
+      row-gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+
+      margin-top: .6rem;
+   }
+
+   #register {
+      margin-left: 0rem;
+   }
+
 }

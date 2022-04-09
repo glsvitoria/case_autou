@@ -118,7 +118,7 @@ li.userLogin h3::before {
 
    width: auto;
    height: 15rem;
-   margin: 0 auto 3.2rem auto;
+   margin: 0 auto 0rem auto;
 }
 
 .view_list__tops .top1 {
@@ -137,7 +137,7 @@ li.userLogin h3::before {
 
 .view_list__tops .top3 {
    order: 3;
-   margin-top: 10rem;
+   margin-top: 4rem;
 
    background-color: rgba(206, 116, 48, 0.75);
 }
@@ -186,4 +186,122 @@ li.userLogin h3::before {
    display: flex;
    justify-content: flex-start;
    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+   
+   ul.view_list__tops {   
+      width: 20vw;
+
+      margin: 0 auto;
+   }
+
+   
+   .view_list__tops .top2 {
+      margin-top: 4rem;
+      margin-right: -4rem;
+   }
+   
+   .view_list__tops .top3 {
+      margin-top: 4rem;
+      margin-left: -4rem;
+   }
+}
+
+@media screen and (max-width: 800px) {
+
+   .view_list__itemstop {
+      padding: .5rem;
+   }
+   
+   .view_list__itemstop h3 {
+      width: 8rem;
+   }
+
+   .view_list__items___img {
+      width: 3.2rem;
+   }
+}
+
+@media screen and (max-width: 675px) {
+
+   .view_title {
+      font-size: 1.6rem;
+   }
+
+   .position_name {
+      font-size: 1rem;
+   }
+
+   .view_list__items___total {
+      font-size: .8rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+   .view_list__tops .top2 {
+      margin-right: -6rem;
+   }
+   
+   .view_list__tops .top3 {
+      margin-left: -6rem;
+   }
+
+   .view_list__tops .position_name {
+      font-size: 1rem;
+   }
+
+   .position_name {
+      font-size: 1.2rem;
+   }
+
+   .view_list > div {
+      flex-direction: column;
+   }
+
+   .view_list__items___total {
+      font-size: 1rem;
+   }
+
+   .view_list__right {
+      margin-left: -.5rem;
+      margin-top: 1rem;
+   }
+}
+
+@media screen and (max-width: 550px) {
+
+   .view_list__tops {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .view_list__tops .top1 {
+      order: 1;
+      margin: 0;
+   }
+
+   .view_list__tops .top2 {
+      order: 2;
+      margin: 0;
+   }
+   
+   .view_list__tops .top3 {
+      order: 3;
+      margin: 0;
+   }
+
+   .view_list__tops > .view_list__itemstop + .view_list__itemstop {
+      margin-top: 1.6rem;
+   }
+
+   .view_list__tops .position_name {
+      font-size: 1rem;
+   }
+
+   .view_list > div {
+      margin-top: 1rem;
+   }
 }

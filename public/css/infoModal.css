@@ -79,3 +79,18 @@ html.dark_mode thead tr {
 thead th:first-child {
    margin-right: 1rem;
 }
+
+@media screen and (max-width: 500px){
+   .modal_header {
+      font-size: .9rem;
+   }
+
+   .modal_body th{
+      font-size: .9rem;
+      padding: .5rem;
+   }
+
+   .modal_body td {
+      font-size: .9rem;
+   }
+}

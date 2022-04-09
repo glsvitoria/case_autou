@@ -40,6 +40,7 @@ main {
 
    background-color: var(--green);
 
+   max-width: 220px;
    margin-top: 0;
 }
 
@@ -129,4 +130,130 @@ form + form + form .change_page {
 
 .change_page:hover .change_page__img {
    margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+
+   .received_btn i {
+   
+      margin: 0 2rem 0 1rem;
+   }
+}
+
+@media screen and (max-width: 925px){
+
+   .received_header .received_btn {
+      width: 25vw;
+   }
+
+   .received_btn i {
+   
+      margin: 0 1.6rem 0 1rem;
+   }
+}
+
+@media screen and (max-width: 725px){
+
+   .received_header .received_btn {
+      width: 30vw;
+   }
+
+   .received_btn i {
+      margin: 0 1.6rem 0 1rem;
+   }
+
+   .change_page {
+      top: 7.5rem;
+      width: 50px;
+      height: 50px;
+   }
+   
+   form + form .change_page {
+      top: 13rem;
+   }
+   
+   form + form + form .change_page {
+      top: 18.5rem;
+   }
+   
+   .change_page i {
+      font-size: 1.9rem;
+   }
+}
+
+@media screen and (max-width: 625px){
+
+   .received_title {
+      font-size: 1.6rem;
+   }
+
+   .received_header .received_btn {
+      font-size: .8rem;
+      width: 30vw;
+   }
+
+   .received_btn i {
+      margin: 0 1rem 0 1rem;
+   }
+
+   .received_list__items > h1 {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (max-width: 500px){
+
+   .received_title {
+      font-size: 1.4rem;
+   }
+
+   .received_header .received_btn {
+      font-size: .7rem;
+      width: 30vw;
+   }
+
+   .received_btn i {
+      margin: 0 .8rem 0 1rem;
+   }
+
+   .received_list__items > h1 {
+      font-size: 1.2rem;
+   }
+
+   .change_page {
+      top: 7rem;
+      width: 40px;
+      height: 40px;
+   }
+   
+   form + form .change_page {
+      top: 12rem;
+   }
+   
+   form + form + form .change_page {
+      top: 17rem;
+   }
+   
+   .change_page i {
+      font-size: 1.6rem;
+   }
+}
+
+@media screen and (max-width: 450px){
+
+   .received_title {
+      font-size: 1.2rem;
+   }
+
+   .received_header .received_btn {
+      font-size: .6rem;
+   }
+
+   .received_btn i {
+      margin: 0 .6rem 0 1rem;
+   }
+
+   .received_list__items > h1 {
+      font-size: 1rem;
+   }
 }

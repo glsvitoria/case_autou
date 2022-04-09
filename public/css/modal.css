@@ -159,7 +159,7 @@ button.reasons_btn {
 .list-choice input[type='radio'] + span {
    color: var(--white-black);
    background: var(--pink-blue);
-   padding: 0.22em .8em;
+   padding: 0.27em .8em;
    display: block;
    text-align: center;
    box-sizing: border-box;
@@ -233,4 +233,60 @@ button.reasons_btn {
 .div_error {
    margin: 1.6rem 0 -2rem 0;
    color: var(--error);
+}
+
+@media screen and (max-width: 1000px){
+   .list-choice-title {
+      padding: 0.3em 1em;
+   }
+
+   .list-choice input[type='radio'] + span {
+      padding: 0.3em .8em;
+   }
+}
+
+@media screen and (max-width: 700px){
+   .modal-wrapper .modal {
+      padding: 3rem 2rem;
+   }
+}
+
+@media screen and (max-width: 600px){
+   #phrase {
+      width: 80%;
+   }
+}
+
+@media screen and (max-width: 450px){
+   .list-choice {
+      width: 200px;
+   }
+
+   .modal-wrapper .modal h2 {
+      font-size: 1.8rem;
+   }
+
+   label[for="person"], label.reaction, label[for="phrase"] {
+      font-size: .9rem;
+   }
+
+   #phrase {
+      width: 100%;
+   }
+
+   .modal-wrapper .modal .buttons {
+      font-size: .9rem;
+   }
+
+   button.send_form {
+      font-size: .8rem;
+   }
+
+   .modal-wrapper .modal {
+      padding: 2rem 1.2rem;
+   }
+}
+
+@media screen and (max-width: 450px){
+   
 }
