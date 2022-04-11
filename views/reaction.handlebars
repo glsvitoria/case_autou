@@ -10,6 +10,7 @@
 				<label for='switch' class='label_checkbox'>
 					<input type='checkbox' id='switch' />
 				</label>
+            <p class="post_check">{{data.acess.postCheck}}</p>
 			</div>
 </header>
 <main>
@@ -25,17 +26,17 @@
 			<ul class='received_list'>
 				<li class='received_list__items'>
 					<h1>Likes recebidos: <span>{{data.users.like.qnt}}</span></h1>
-					<p>{{data.users.like.strings.[0]}}</p>
+					<p>{{data.users.like.strings.[0].[0]}}</p>
                <p>{{data.users.like.strings.[1]}}</p>
                <p>{{data.users.like.strings.[2]}}</p>
                <p>{{data.users.like.strings.[3]}}</p>
 				</li>
 				<li class='received_list__items'>
 					<h1>Excelente trabalho recebidos: <span>{{data.users.work.qnt}}</h1>
-					<p>{{data.users.work.strings.[0]}}</p>
-					<p>{{data.users.work.strings.[1]}}</p>
-               <p>{{data.users.work.strings.[2]}}</p>
-               <p>{{data.users.work.strings.[3]}}</p>
+					<p><span class="phrase_span">{{data.users.work.strings.[0].[0]}}</span> {{data.users.work.strings.[0].[1]}}</p>
+					<p><span class="phrase_span">{{data.users.work.strings.[1].[0]}}</span> {{data.users.work.strings.[1].[1]}}</p>
+               <p><span class="phrase_span">{{data.users.work.strings.[2].[0]}}</span> {{data.users.work.strings.[2].[1]}}</p>
+               <p><span class="phrase_span">{{data.users.work.strings.[3].[0]}}</span> {{data.users.work.strings.[3].[1]}}</p>
 				</li>
 
 				<li class='received_list__items'>
@@ -56,13 +57,13 @@
 		</div>
 	</section>
 
-	<form action="/toreaction/{{data.acess.userAcess}}&{{data.acess.typeAcess}}" class="gets" method="GET">
+	<form action="/toreaction/{{data.acess.userAcess}}&{{data.acess.typeAcess}}={{data.acess.userLog}}" class="gets" method="GET">
 		<div class='change_page'>
 			<i class='icon-heart'></i>
 		</div>
 	</form>
 
-	<form action="/toranking/{{data.acess.userAcess}}&{{data.acess.typeAcess}}" class="gets" method="GET">
+	<form action="/toranking/{{data.acess.userAcess}}&{{data.acess.typeAcess}}={{data.acess.userLog}}" class="gets" method="GET">
 		<div class='change_page'>
 			<i class='icon-award'></i>
 		</div>
@@ -86,6 +87,14 @@
       </div>
    </div>
 
+   <div class='modal-wrapper-post'>
+      <div class='modal-post'>
+         <p class="message_post"></p>
+
+         <button class="send_form form__btn login_form__btn2">Continuar</button>
+      </div>
+   </div>
+
 
 </main>
 
@@ -93,7 +102,7 @@
 	<div class='modal'>
 		<h2>Enviar uma reação</h2>
 
-		<form action='/reactions/{{data.acess.userAcess}}&{{data.acess.typeAcess}}' method='POST'>
+		<form action='/reactions/{{data.acess.userAcess}}&{{data.acess.typeAcess}}={{data.acess.userLog}}' method='POST'>
 			<label class='sr-only' for='person'> A quem você quer reagir? </label>
 
 			<div class='list-choice list_one'>
@@ -140,4 +149,6 @@
 <script src='/js/darkMode.js'></script>
 <script src='/js/reaction/modal.js'></script>
 <script src="/js/navigation.js"></script>
+<script src="/js/reaction/membersList.js"></script>
+<script src="/js/reaction/postModal.js"></script>
 <script src="/js/login/logoutModal.js"></script>

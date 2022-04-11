@@ -1,0 +1,61 @@
+@import url('index.css');
+@import url('reaction.css');
+
+.modal-wrapper-post.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal-wrapper-post {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+
+	background: rgba(4, 9, 17, 0.8);
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.modal-wrapper-post .modal-post {
+	width: min(40rem, 75%);
+	margin: auto;
+	padding: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 0.8rem;
+
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+
+	background-color: var(--background-header-footer);
+	color: var(--text-logo-grey);
+}
+
+.modal-wrapper-post .modal-post p.failed {
+   color: var(--error);
+}
+
+.modal-wrapper-post .modal-post p.concluded {
+   color: var(--green);
+}
+
+.modal-wrapper-post .modal-post .send_form{
+	margin-top: 3rem;
+	width: 40%;
+}
+
+.modal-wrapper-post .modal-post p.failed + .send_form {
+   background-color: var(--error);
+}
+
+.modal-wrapper-post .modal-post p.concluded + .send_form {
+   background-color: var(--green);
+}

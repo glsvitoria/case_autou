@@ -2,7 +2,7 @@
     "users": [
         {
             "id": 1,
-            "register": 3748,
+            "register": "3748",
             "email": "lucas.fernandes@cliente.com",
             "fullName": "Lucas Fernandes",
             "like": {
@@ -15,7 +15,9 @@
             },
             "proud": {
                 "qnt": 0,
-                "strings": []
+                "strings": [
+                    0
+                ]
             },
             "colaboration": {
                 "qnt": 0,
@@ -25,7 +27,7 @@
         },
         {
             "id": 2,
-            "register": 2482,
+            "register": "2482",
             "email": "pedro.lima@cliente.com",
             "fullName": "Pedro Lima",
             "like": {
@@ -48,7 +50,7 @@
         },
         {
             "id": 3,
-            "register": 6449,
+            "register": "6449",
             "email": "maria.julianelli@cliente.com",
             "fullName": "Maria Julianelli",
             "like": {
@@ -71,7 +73,7 @@
         },
         {
             "id": 4,
-            "register": 2749,
+            "register": "2749",
             "email": "kevin.restom@cliente.com",
             "fullName": "Kevin Restom",
             "like": {
@@ -94,7 +96,7 @@
         },
         {
             "id": 5,
-            "register": 4128,
+            "register": "4128",
             "email": "amanda.amorim@cliente.com",
             "fullName": "Amanda Amorim",
             "like": {
@@ -117,7 +119,7 @@
         },
         {
             "id": 6,
-            "register": 9252,
+            "register": "9252",
             "email": "fernanda.silva@cliente.com",
             "fullName": "Fernanda Silva",
             "like": {
@@ -140,7 +142,7 @@
         },
         {
             "id": 7,
-            "register": 5945,
+            "register": "5945",
             "email": "carla.pereira@cliente.com",
             "fullName": "Carla Pereira",
             "like": {
@@ -148,8 +150,13 @@
                 "strings": []
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Lucas Fernandes"
+                    ]
+                ]
             },
             "proud": {
                 "qnt": 0,
@@ -159,11 +166,11 @@
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 4
         },
         {
             "id": 8,
-            "register": 4879,
+            "register": "4879",
             "email": "pedro.matos@cliente.com",
             "fullName": "Pedro Matos",
             "like": {
@@ -186,7 +193,7 @@
         },
         {
             "id": 9,
-            "register": 1827,
+            "register": "1827",
             "email": "nathalia.garcia@cliente.com",
             "fullName": "Nathalia Garcia",
             "like": {
@@ -209,7 +216,7 @@
         },
         {
             "id": 10,
-            "register": 1318,
+            "register": "1318",
             "email": "leonardo.lima@cliente.com",
             "fullName": "Leonardo Lima",
             "like": {
@@ -232,7 +239,7 @@
         },
         {
             "id": 11,
-            "register": 3564,
+            "register": "3564",
             "email": "giulia.scarppa@cliente.com",
             "fullName": "Giulia Scarppa",
             "like": {
@@ -255,7 +262,7 @@
         },
         {
             "id": 12,
-            "register": 9178,
+            "register": "9178",
             "email": "michael.pereira@cliente.com",
             "fullName": "Michael Pereira",
             "like": {
@@ -278,7 +285,7 @@
         },
         {
             "id": 13,
-            "register": 6870,
+            "register": "6870",
             "email": "natan.franco@cliente.com",
             "fullName": "Natan Franco",
             "like": {
@@ -301,7 +308,7 @@
         },
         {
             "id": 14,
-            "register": 5723,
+            "register": "5723",
             "email": "otávio.costa@cliente.com",
             "fullName": "Otávio Costa",
             "like": {
@@ -324,7 +331,7 @@
         },
         {
             "id": 15,
-            "register": 1996,
+            "register": "1996",
             "email": "thales.ferreira@cliente.com",
             "fullName": "Thales Ferreira",
             "like": {
@@ -347,7 +354,7 @@
         },
         {
             "id": 16,
-            "register": 2049,
+            "register": "2049",
             "email": "anna.alves@cliente.com",
             "fullName": "Anna Alves",
             "like": {
@@ -370,7 +377,7 @@
         },
         {
             "id": 17,
-            "register": 1694,
+            "register": "1694",
             "email": "alvaro.souza@cliente.com",
             "fullName": "Alvaro Souza",
             "like": {
@@ -393,7 +400,7 @@
         },
         {
             "id": 18,
-            "register": 8120,
+            "register": "8120",
             "email": "marcela.santos@cliente.com",
             "fullName": "Marcela Santos",
             "like": {
@@ -416,7 +423,7 @@
         },
         {
             "id": 19,
-            "register": 2710,
+            "register": "2710",
             "email": "ana.oliveira@cliente.com",
             "fullName": "Ana Oliveira",
             "like": {

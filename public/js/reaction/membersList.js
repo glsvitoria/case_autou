@@ -114,5 +114,3 @@ const membersList = [
       fullName: 'Ana Oliveira',
 	}
 ]
-
-localStorage.setItem('membersList', JSON.stringify(membersList))

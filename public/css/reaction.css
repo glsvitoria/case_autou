@@ -132,6 +132,15 @@ form + form + form .change_page {
    margin-left: 1rem;
 }
 
+.post_check {
+   visibility: hidden;
+   display: none;
+}
+
+.phrase_span {
+   color: var(--green);
+}
+
 @media screen and (max-width: 1200px){
 
    .received_btn i {

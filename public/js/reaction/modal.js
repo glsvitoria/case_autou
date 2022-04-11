@@ -44,14 +44,15 @@ let membersString = localStorage.getItem('membersList')
 let members = JSON.parse(membersString)
 
 // Capturando o usuário da sessão
-const header= document.querySelector('.header_text')
+const header= document.querySelector('.header_text span')
 const headerArray = header.innerHTML.split(' ')
-const user = `${headerArray[1]} ${headerArray[2]}`.replace(',', '')
+const user = `${headerArray[0]} ${headerArray[1]}`.replace(',', '')
 
 // Adicionando os colegas de trabalho no select
 const div = document.querySelector('.list-choice-objects')
 div.innerHTML = ''
 
+console.log(members)
 // Criando o select para o membro escolhido e verificando que não está dando como opção o próprio usuário
 for(let i = 0; i < 19; i++){
    if(user != members[i].fullName) {
@@ -64,6 +65,7 @@ for(let i = 0; i < 19; i++){
 
       const span = document.createElement('span')
       const spanTxt = document.createTextNode(members[i].fullName)
+      
       span.appendChild(spanTxt)
 
       label.appendChild(input)
@@ -103,7 +105,6 @@ for(let i = 0; i < 4; i++){
    label.appendChild(span)
 
    divReasons.appendChild(label)
-
 }
 
 // Verificar envio do form

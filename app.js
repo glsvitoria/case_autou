@@ -17,7 +17,10 @@ app.set('views', path.join(__dirname, 'views'))
 // STATIC FOLDER
 app.use(express.static(path.join(__dirname, 'public')))
 
-// Routes
+// DATABASE
+const dbPath = path.join(__dirname, 'src', 'database.json')
+
+// ROUTES - LOGIN
 app.get('/', (req, res) => {
 	res.render('index')
 })
@@ -25,64 +28,45 @@ app.get('/', (req, res) => {
 app.post('/login', async (req, res) => {
 	const { options, user } = req.body
 
-	res.redirect(`/reaction/${user}&${options}`)
-})
-
-const dbPath = path.join(__dirname, 'src', 'databasetest.json')
-app.get('/reaction/:userAcess&:typeAcess', async (req, res) => {
-	const { userAcess, typeAcess } = req.params
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
 	const parsedDb = JSON.parse(db)
 
-   let userNow
-   parsedDb.users.forEach((userItem) => {
-      if(userItem[typeAcess] == userAcess){
-         userNow = userItem
-      }
-   })
+	const userLog = findUserLog(parsedDb, user, options)
+
+	res.redirect(`/reaction/${user}&${options}=${userLog}`)
+})
+
+// ROUTES - REACTIONS
+app.get('/reaction/:userAcess&:typeAcess=:userLog/:postCheck?', async (req, res) => {
+	const { userAcess, typeAcess, userLog, postCheck } = req.params
+	const db = await fs.promises.readFile(dbPath, 'utf-8')
+	const parsedDb = JSON.parse(db)
+
+	let userNow
+	parsedDb.users.forEach((userItem) => {
+		if (userItem[typeAcess] == userAcess) {
+			userNow = userItem
+		}
+	})
 
 	res.render('reaction', {
 		status: 'sucess',
 		data: {
-         users: userNow,
-         acess: {
-            userAcess,
-            typeAcess
-         }
-		}
-	})
-})
-
-app.get('/ranking/:userAcess&:typeAcess', async (req, res) => {
-   const { userAcess, typeAcess } = req.params
-   const db = await fs.promises.readFile(dbPath, 'utf-8')
-	const parsedDb = JSON.parse(db)
-
-   let userNow
-   parsedDb.users.forEach((userItem) => {
-      if(userItem[typeAcess] == userAcess){
-         userNow = userItem
-      }
-   })
-   
-	res.render('ranking', {
-		status: 'sucess',
-		data: {
-			users: orderRanking(parsedDb),
-         userNow,
-         acess: {
-            userAcess,
-            typeAcess
-         }
+			users: userNow,
+			acess: {
+				userAcess,
+				typeAcess,
+				userLog,
+            postCheck
+			},
 		},
-      
 	})
 })
 
 // Ler o arquivo, parsear o objeto, modicar objeto, salvar de volta
-app.post('/reactions/:userAcess&:typeAcess', async (req, res) => {
+app.post('/reactions/:userAcess&:typeAcess=:userLog', async (req, res) => {
 	const { person, reason, phrase } = req.body
-   const { userAcess, typeAcess } = req.params
+	const { userAcess, typeAcess, userLog } = req.params
 
 	// Ler o banco de dados
 	const db = await fs.promises.readFile(dbPath, 'utf-8')
@@ -90,44 +74,87 @@ app.post('/reactions/:userAcess&:typeAcess', async (req, res) => {
 	const parsedDb = JSON.parse(db)
 
 	const userFromUserReaction = findUser(parsedDb, person)
+   
+   let postCheck
+   let cont = 0
 
 	parsedDb.users.forEach((item) => {
-		if (item.id === userFromUserReaction) {
+		if (item.id === userFromUserReaction && isCanReaction(parsedDb, userLog, reason)) {
 			item[reason].qnt += 1
-			item[reason].strings.push(phrase)
-         if(reason == 'colaboration'){
-            item.totalPoints += 1
-         } else if(reason == 'like'){
-            item.totalPoints += 2
-         } else if(reason == 'proud'){
-            item.totalPoints += 3
-         } else if(reason == 'work'){
-            item.totalPoints += 4
-         }
-		}
+			item[reason].strings.push([phrase, userLog])
+			if (reason == 'colaboration') {
+				item.totalPoints += 1
+			} else if (reason == 'like') {
+				item.totalPoints += 2
+			} else if (reason == 'proud') {
+				item.totalPoints += 3
+			} else if (reason == 'work') {
+				item.totalPoints += 4
+			}
+         postCheck = 'true'
+		} else {
+         cont++
+      }
 	})
+
+   if(cont == 19) {
+      postCheck = 'false'
+   }
+
+   console.log(postCheck)
 
 	await fs.promises.writeFile(dbPath, JSON.stringify(parsedDb, null, 4))
 
-	res.redirect(`/reaction/${userAcess}&${typeAcess}`)
+	res.redirect(`/reaction/${userAcess}&${typeAcess}=${userLog}/${postCheck}`)
 })
 
-app.get('/toreaction/:userAcess&:typeAcess', (req, res) => {
-   const { userAcess, typeAcess } = req.params
-  
-   res.redirect(`/reaction/${userAcess}&${typeAcess}`)
+// ROUTES - RANKING
+app.get('/ranking/:userAcess&:typeAcess=:userLog', async (req, res) => {
+	const { userAcess, typeAcess, userLog } = req.params
+	const db = await fs.promises.readFile(dbPath, 'utf-8')
+	const parsedDb = JSON.parse(db)
+
+	let userNow
+	parsedDb.users.forEach((userItem) => {
+		if (userItem[typeAcess] == userAcess) {
+			userNow = userItem
+		}
+	})
+
+	res.render('ranking', {
+		status: 'sucess',
+		data: {
+			users: orderRanking(parsedDb),
+			userNow,
+			acess: {
+				userAcess,
+				typeAcess,
+            userLog
+			},
+		},
+	})
 })
 
-app.get('/toranking/:userAcess&:typeAcess', (req, res) => {
-   const { userAcess, typeAcess } = req.params
-   
-   res.redirect(`/ranking/${userAcess}&${typeAcess}`)
+
+// ROUTES - CHANGE PAGE
+app.get('/toreaction/:userAcess&:typeAcess=:userLog', (req, res) => {
+	const { userAcess, typeAcess, userLog } = req.params
+
+	res.redirect(`/reaction/${userAcess}&${typeAcess}=${userLog}`)
+})
+
+app.get('/toranking/:userAcess&:typeAcess=:userLog', (req, res) => {
+	const { userAcess, typeAcess, userLog } = req.params
+
+	res.redirect(`/ranking/${userAcess}&${typeAcess}=${userLog}`)
 })
 
 app.get('/logout', (req, res) => {
-   res.redirect('/')
+	res.redirect('/')
 })
 
+
+// FUNCTIONS
 function findUser({ users }, person) {
 	for (let user of users) {
 		if (user.register == person) {
@@ -136,20 +163,42 @@ function findUser({ users }, person) {
 	}
 }
 
-function orderRanking({ users }){
-   function order(a, b){
-      if(a.totalPoints < b.totalPoints){
-         return 1
-      }
-      if(a.totalPoints > b.totalPoints){
-         return -1
-      }
-      return 0
-   }
-
-   return users.sort(order)
+function findUserLog({ users }, userAcess, typeAcess) {
+	for (let user of users) {
+		if (user[typeAcess] == userAcess) {
+			return user.fullName
+		}
+	}
 }
 
+function isCanReaction({ users }, userLog, reason) {
+   for(let user of users){
+      for(let string of user[reason].strings){
+         if(string[1] == userLog){
+            return false
+         }
+      }
+   }
+
+   return true
+}
+
+function orderRanking({ users }) {
+	function order(a, b) {
+		if (a.totalPoints < b.totalPoints) {
+			return 1
+		}
+		if (a.totalPoints > b.totalPoints) {
+			return -1
+		}
+		return 0
+	}
+
+	return users.sort(order)
+}
+
+
+// START SERVER
 app.listen(PORT, function () {
 	console.log('O Express está rodando na porta ' + PORT)
 })

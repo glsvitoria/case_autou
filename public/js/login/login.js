@@ -1,4 +1,4 @@
-const acessLogin = [
+const membersList = [
 	{
 		id: 1,
 		register: 3748,
@@ -161,6 +161,7 @@ loginButton.addEventListener('click', (event) => {
 	event.preventDefault()
 	verifyLogin()
    saveUser()
+   localStorage.setItem('membersList', JSON.stringify(membersList))
 })
 
 // Verificar se libera o login ou não, caso preciso será gerado um erro para o usuário
@@ -170,13 +171,12 @@ function verifyLogin() {
 	const optionChoose = chosenOption()
 	const loginUser = chosenUser()
 
-	for (let item of acessLogin) {
+	for (let item of membersList) {
       // Se for acessar por email
 		if (optionChoose == 'email') {
          // Se tiver o email na lista de usuário
 			if (item.email == loginUser) {
             user = item
-            localStorage.setItem('membersList', JSON.stringify(acessLogin))
             form.submit()
             break
          // Se não tiver o email lista de usuário  
@@ -188,7 +188,6 @@ function verifyLogin() {
          // Se tiver a matrícula na lista de usuário
 			if (item.register == loginUser) {
             user = item
-            localStorage.setItem('membersList', JSON.stringify(acessLogin))
             form.submit()
             break
          // Se não tiver a matrícula lista de usuário
