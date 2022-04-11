@@ -4,14 +4,13 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon app.js"
+		"dev": "nodemon app.js",
+		"start": "node app.js"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.2",
 		"express": "^4.17.3",
-		"express-handlebars": "^6.0.3",
-		"sequelize": "^6.17.0",
-		"sqlite3": "^5.0.2"
+		"express-handlebars": "^6.0.3"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.15"
