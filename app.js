@@ -74,7 +74,6 @@ app.post('/reactions/:userAcess&:typeAcess=:userLog', async (req, res) => {
 	const parsedDb = JSON.parse(db)
 
 	const userFromUserReaction = findUser(parsedDb, person)
-   console.log(person)
    
    let postCheck
    let cont = 0
@@ -175,7 +174,7 @@ function findUserLog({ users }, userAcess, typeAcess) {
 function isCanReaction({ users }, userLog, reason, id) {
    for(let user of users){
       for(let string of user[reason].strings){
-         if(string[1] == userLog && user.id == id){
+         if(string[1] == userLog && user.register == id){
             return false
          }
       }

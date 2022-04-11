@@ -80,10 +80,10 @@
                 ]
             },
             "colaboration": {
-                "qnt": 0,
+                "qnt": 2,
                 "strings": []
             },
-            "totalPoints": 11
+            "totalPoints": 13
         },
         {
             "id": 3,
@@ -193,7 +193,7 @@
                 ]
             },
             "proud": {
-                "qnt": 1,
+                "qnt": 5,
                 "strings": [
                     [
                         "Estamos muito orgulhosos de você",
@@ -214,7 +214,7 @@
                     ]
                 ]
             },
-            "totalPoints": 11
+            "totalPoints": 23
         },
         {
             "id": 6,
