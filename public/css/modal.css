@@ -23,7 +23,7 @@
 
 .modal-wrapper .modal {
 	width: min(40rem, 75%);
-	margin: 7.5rem auto auto auto;
+	margin: 7.5vh auto auto auto;
 	padding: 4rem;
 
 	display: flex;
@@ -227,7 +227,7 @@ button.reasons_btn {
 }
 
 .list-choice:hover .list-choice-objects {
-   max-height: 620px;
+   max-height: 70vh;
 }
 
 .div_error {
@@ -285,8 +285,4 @@ button.reasons_btn {
    .modal-wrapper .modal {
       padding: 2rem 1.2rem;
    }
-}
-
-@media screen and (max-width: 450px){
-   
 }

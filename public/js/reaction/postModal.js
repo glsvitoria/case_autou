@@ -2,7 +2,7 @@ const postCheck = document.querySelector('.post_check').innerText
 
 const p = document.querySelector('.message_post')
 if(postCheck == 'false'){
-   p.innerText = 'Elemento não adicionado a lista. Você já reagiu a esse usuário.'
+   p.innerText = 'Elemento não adicionado a lista. Você já reagiu a esse usuário com essa reação.'
    p.classList.add('failed')
    ModalPost().open()
 } else if(postCheck == 'true'){

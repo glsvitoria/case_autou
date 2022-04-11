@@ -74,12 +74,13 @@ app.post('/reactions/:userAcess&:typeAcess=:userLog', async (req, res) => {
 	const parsedDb = JSON.parse(db)
 
 	const userFromUserReaction = findUser(parsedDb, person)
+   console.log(person)
    
    let postCheck
    let cont = 0
 
 	parsedDb.users.forEach((item) => {
-		if (item.id === userFromUserReaction && isCanReaction(parsedDb, userLog, reason)) {
+		if (item.id === userFromUserReaction && isCanReaction(parsedDb, userLog, reason, person)) {
 			item[reason].qnt += 1
 			item[reason].strings.push([phrase, userLog])
 			if (reason == 'colaboration') {
@@ -171,10 +172,10 @@ function findUserLog({ users }, userAcess, typeAcess) {
 	}
 }
 
-function isCanReaction({ users }, userLog, reason) {
+function isCanReaction({ users }, userLog, reason, id) {
    for(let user of users){
       for(let string of user[reason].strings){
-         if(string[1] == userLog){
+         if(string[1] == userLog && user.id == id){
             return false
          }
       }

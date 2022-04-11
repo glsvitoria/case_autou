@@ -6,22 +6,42 @@
             "email": "lucas.fernandes@cliente.com",
             "fullName": "Lucas Fernandes",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você merece muito",
+                        "Leonardo Lima"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você teve um excelente trabalho esse mês",
+                        "Thales Ferreira"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Nathalia Garcia"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Alvaro Souza"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 10
         },
         {
             "id": 2,
@@ -29,22 +49,41 @@
             "email": "pedro.lima@cliente.com",
             "fullName": "Pedro Lima",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Anna Alves"
+                    ],
+                    [
+                        "Esse like você conquistou",
+                        "Kevin Restom"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Thales Ferreira"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Alvaro Souza"
+                    ]
+                ]
             },
             "colaboration": {
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 3,
@@ -52,22 +91,41 @@
             "email": "maria.julianelli@cliente.com",
             "fullName": "Maria Julianelli",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Fernanda Silva"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Kevin Restom"
+                    ],
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Lucas Fernandes"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Thales Ferreira"
+                    ]
+                ]
             },
             "colaboration": {
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 13
         },
         {
             "id": 4,
@@ -75,22 +133,41 @@
             "email": "kevin.restom@cliente.com",
             "fullName": "Kevin Restom",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "sse like você merece muito",
+                        "Nathalia Garcia"
+                    ],
+                    [
+                        "Esse like você merece muito",
+                        "Marcela Santos"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Amanda Amorim"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você teve um avanço orgulhoso",
+                        "Lucas Fernandes"
+                    ]
+                ]
             },
             "colaboration": {
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 5,
@@ -98,22 +175,46 @@
             "email": "amanda.amorim@cliente.com",
             "fullName": "Amanda Amorim",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Ana Oliveira"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Marcela Santos"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Michael Pereira"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Fernanda Silva"
+                    ],
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Pedro Lima"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 6,
@@ -121,22 +222,46 @@
             "email": "fernanda.silva@cliente.com",
             "fullName": "Fernanda Silva",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Michael Pereira"
+                    ],
+                    [
+                        "Esse like você merece muito",
+                        "Alvaro Souza"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Lucas Fernandes"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Michael Pereira"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Pedro Matos"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 12
         },
         {
             "id": 7,
@@ -144,22 +269,45 @@
             "email": "carla.pereira@cliente.com",
             "fullName": "Carla Pereira",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você merece esse like",
+                        "Pedro Matos"
+                    ],
+                    [
+                        "Você merece esse like",
+                        "Pedro Lima"
+                    ]
+                ]
             },
             "work": {
                 "qnt": 0,
                 "strings": []
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você teve um avanço orgulhoso",
+                        "Natan Franco"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Giulia Scarppa"
+                    ],
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Anna Alves"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 9
         },
         {
             "id": 8,
@@ -171,18 +319,41 @@
                 "strings": []
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Giulia Scarppa"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 3,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Amanda Amorim"
+                    ],
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Giulia Scarppa"
+                    ],
+                    [
+                        "Esse mês você teve um avanço orgulhoso",
+                        "Marcela Santos"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Ana Oliveira"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 14
         },
         {
             "id": 9,
@@ -190,22 +361,46 @@
             "email": "nathalia.garcia@cliente.com",
             "fullName": "Nathalia Garcia",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Giulia Scarppa"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Alvaro Souza"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Maria Julianelli"
+                    ],
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Maria Julianelli"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Leonardo Lima"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 13
         },
         {
             "id": 10,
@@ -213,22 +408,46 @@
             "email": "leonardo.lima@cliente.com",
             "fullName": "Leonardo Lima",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Esse like você merece muito",
+                        "Pedro Lima"
+                    ],
+                    [
+                        "Esse like você conquistou",
+                        "Ana Oliveira"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Nathalia Garcia"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você teve um avanço orgulhoso",
+                        "Anna Alves"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Kevin Restom"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 12
         },
         {
             "id": 11,
@@ -236,22 +455,46 @@
             "email": "giulia.scarppa@cliente.com",
             "fullName": "Giulia Scarppa",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você merece muito",
+                        "Pedro Lima"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Maria Julianelli"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Lucas Fernandes"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Pedro Matos"
+                    ],
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Natan Franco"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 12,
@@ -259,22 +502,46 @@
             "email": "michael.pereira@cliente.com",
             "fullName": "Michael Pereira",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você merece esse like",
+                        "Pedro Matos"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Ana Oliveira"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Que orgulho de você",
+                        "Fernanda Silva"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Carla Pereira"
+                    ],
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Ana Oliveira"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 13,
@@ -282,22 +549,41 @@
             "email": "natan.franco@cliente.com",
             "fullName": "Natan Franco",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você merece esse like",
+                        "Giulia Scarppa"
+                    ]
+                ]
             },
             "work": {
                 "qnt": 0,
                 "strings": []
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você teve um avanço orgulhoso",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Nathalia Garcia"
+                    ],
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Maria Julianelli"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 7
         },
         {
             "id": 14,
@@ -305,12 +591,34 @@
             "email": "otávio.costa@cliente.com",
             "fullName": "Otávio Costa",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você merece esse like",
+                        "Thales Ferreira"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 4,
+                "strings": [
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Natan Franco"
+                    ],
+                    [
+                        "Você fez um excelente trabalho",
+                        "Lucas Fernandes"
+                    ],
+                    [
+                        "Você fez um excelente trabalho",
+                        "Leonardo Lima"
+                    ],
+                    [
+                        "Conseguiu produzir um trabalho incrível",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "proud": {
                 "qnt": 0,
@@ -320,7 +628,7 @@
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 18
         },
         {
             "id": 15,
@@ -332,18 +640,37 @@
                 "strings": []
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Michael Pereira"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Orgulho demais pelo avanço que você teve",
+                        "Leonardo Lima"
+                    ],
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você foi um ótimo colaborar para nossa equipe",
+                        "Fernanda Silva"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 16,
@@ -351,22 +678,46 @@
             "email": "anna.alves@cliente.com",
             "fullName": "Anna Alves",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Fernanda Silva"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Otávio Costa"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Pedro Matos"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Pedro Lima"
+                    ],
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Natan Franco"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 17,
@@ -374,22 +725,46 @@
             "email": "alvaro.souza@cliente.com",
             "fullName": "Alvaro Souza",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você conquistou",
+                        "Otávio Costa"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhosos de você",
+                        "Amanda Amorim"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você conseguiu colaborar muito com a equipe",
+                        "Lucas Fernandes"
+                    ],
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Otávio Costa"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 18,
@@ -397,22 +772,41 @@
             "email": "marcela.santos@cliente.com",
             "fullName": "Marcela Santos",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Você merece esse like",
+                        "Michael Pereira"
+                    ],
+                    [
+                        "Você merece esse like",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse mês você arrasou",
+                        "Amanda Amorim"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Otávio Costa"
+                    ]
+                ]
             },
             "colaboration": {
                 "qnt": 0,
                 "strings": []
             },
-            "totalPoints": 0
+            "totalPoints": 11
         },
         {
             "id": 19,
@@ -420,22 +814,46 @@
             "email": "ana.oliveira@cliente.com",
             "fullName": "Ana Oliveira",
             "like": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Esse like você merece muito",
+                        "Kevin Restom"
+                    ]
+                ]
             },
             "work": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Você fez um excelente trabalho",
+                        "Anna Alves"
+                    ]
+                ]
             },
             "proud": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 1,
+                "strings": [
+                    [
+                        "Estamos muito orgulhos do seu avanço",
+                        "Carla Pereira"
+                    ]
+                ]
             },
             "colaboration": {
-                "qnt": 0,
-                "strings": []
+                "qnt": 2,
+                "strings": [
+                    [
+                        "Esse mês você colaborou muito com a equipe",
+                        "Marcela Santos"
+                    ],
+                    [
+                        "Você conseguiu ser um ótimo colaborador para a equipe",
+                        "Marcela Santos"
+                    ]
+                ]
             },
-            "totalPoints": 0
+            "totalPoints": 11
         }
     ]
 }
